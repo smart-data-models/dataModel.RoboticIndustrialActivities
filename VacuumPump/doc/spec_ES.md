@@ -2,11 +2,13 @@ Entidad: Bomba de vacío
 =======================  
 [Licencia abierta](https://github.com/smart-data-models//dataModel.RoboticIndustrialActivities/blob/master/VacuumPump/LICENSE.md)  
 [documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+Descripción global: **Una bomba de vacío.**  
 
 ## Lista de propiedades  
 
-Propiedades requeridas  
-- No hay propiedades requeridas  ## Descripción del modelo de datos de las propiedades  
+- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `location`:   - `name`: El nombre de este artículo.  - `True`: Indica si el dispositivo está encendido (verdadero) o apagado (falso).  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `pumpModel`: El identificador del modelo de bomba.  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `type`: Tiene que ser VacuumPump. Tipo de entidad NGSI.  - `vacuumLevel`: El nivel de vacío actual, un valor entre 0 y 1.    
+Propiedades requeridas  
+- `id`  - `type`  ## Descripción del modelo de datos de las propiedades  
 Ordenados alfabéticamente (haga clic para ver los detalles)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
@@ -272,9 +274,69 @@ VacuumPump:
 ## Ejemplo de carga útil  
 #### Ejemplo de valores clave de VacuumPump NGSI-v2  
 Aquí hay un ejemplo de un VacuumPump en formato JSON-LD como valores-clave. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+```json  
+{  
+  "id": "VacuumPump.001",  
+  "type": "VacuumPump",  
+  "vacuumLevel": 0.95,  
+  "on": false,  
+  "pumpModel": "VP 123a"  
+}  
+```  
 #### Bomba de vacío NGSI-v2 normalizada Ejemplo  
 Aquí hay un ejemplo de una VacuumPump en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+```json  
+{  
+  "id": "urn:ngsi-ld:VacuumPump:FlexEdgePump",  
+  "type": "VacuumPump",  
+  "vacuumLevel": {  
+    "type": "Number",  
+    "value": 0.95  
+  },  
+  "on": {  
+    "type": "Boolean",  
+    "value": false  
+  },  
+  "pumpModel": {  
+    "type": "Text",  
+    "value": "VP 123a"  
+  }  
+}  
+```  
 #### Ejemplo de valores clave de la bomba de vacío NGSI-LD  
 Aquí hay un ejemplo de un VacuumPump en formato JSON-LD como key-values. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+```json  
+{  
+  "id": "urn:ngsi-ld:VacuumPump:001",  
+  "type": "VacuumPump",  
+  "vacuumLevel": 0.95,  
+  "on": false,  
+  "pumpModel": "VP 123a",  
+  "@context": [  
+    "https://smartdatamodels.org/context.jsonld"  
+  ]  
+}  
+```  
 #### Bomba de vacío NGSI-LD normalizada Ejemplo  
 A continuación se muestra un ejemplo de VacuumPump en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+```json  
+{  
+  "id": "urn:ngsi-ld:VacuumPump:001",  
+  "type": "VacuumPump",  
+  "vacuumLevel": {  
+    "type": "Property",  
+    "value": 0.95  
+  },  
+  "on": {  
+    "type": "Property",  
+    "value": false  
+  },  
+  "pumpModel": {  
+    "type": "Property",  
+    "value": "VP 123a"  
+  },  
+  "@context": [  
+    "https://smartdatamodels.org/context.jsonld"  
+  ]  
+}  
+```  

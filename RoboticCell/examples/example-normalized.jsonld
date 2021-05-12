@@ -1,0 +1,39 @@
+{
+  "id": "urn:ngsi-ld:RoboticCell:FlexEdge",
+  "type": "RoboticCell",
+  "refRobot": {
+    "type": "Relationship",
+    "value": "urn:ngsi-ld:Robot:FlexEdgeRobot"
+  },
+  "refVacuumPump": {
+    "type": "Relationship",
+    "object": "urn:ngsi-ld:VacuumPump:FlexEdgePump"
+  },
+  "refIncomingPallet": {
+    "type": "Relationship",
+    "object": "urn:ngsi-ld:Pallet:0003"
+  },
+  "refOutgoingPallet": {
+    "type": "Relationship",
+    "object": "urn:ngsi-ld:Pallet:0004"
+  },
+  "errorNumber": {
+    "type": "Property",
+    "value": 0
+  },
+  "errorMessage": {
+    "type": "Property",
+    "value": ""
+  },
+  "totalNumberOfPieces": {
+    "type": "Property",
+	"value": 12
+  },
+  "currentPieceNumber": {
+    "type": "Property",
+	"value": 4
+  },
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

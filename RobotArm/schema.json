@@ -1,0 +1,64 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$schemaVersion": "0.0.1",
+  "$id": "https://smart-data-models.github.io/dataModel.RoboticIndustrialActivities/RobotArm/schema.json",
+  "title": " Smart Data Models- Industrial robot arm schema",
+  "description": "A robotic arm for moving stone pieces.",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+    },
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "RobotArm"
+          ],
+          "description": "Property. It has to be RobotArm. NGSI Entity type."
+        },
+        "robotId": {
+          "type": "string",
+          "description": "Property. Model:'https://schema.org/Text'. The robot identifier."
+        },
+        "robotModel": {
+          "type": "string",
+          "description": "Property. Model:'https://schema.org/Text'. The robot manufacturing model."
+        },
+        "toolId": {
+          "type": "integer",
+          "description": "Property. Model:'https://schema.org/Text'. The number of the tool currently attached to the robot, 0 if no tool attached."
+        },
+        "jobCurrentState": {
+          "type": "string",
+          "description": "Property. Model:'https://schema.org/Text'. Current status of the robot job. Enum:'idle, loading, processing, unloading'.",
+          "enum": [
+            "idle",
+            "loading",
+            "processing",
+            "unloading"
+          ]
+        },
+        "axis": {
+          "type": "array",
+          "description": "Property. Model:'https://schema.org/Number'. Angle of the different axis on the robot arm.",
+          "items": {
+            "type": "number"
+          }
+        },
+        "status": {
+          "type": "string",
+          "description": "Property. Model:'https://schema.org/Number'. Status of the robot."
+        }
+      }
+    }
+  ],
+  "required": [
+    "id",
+    "type"
+  ]
+}

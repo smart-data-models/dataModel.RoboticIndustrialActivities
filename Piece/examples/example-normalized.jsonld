@@ -1,0 +1,39 @@
+{
+  "id": "urn:ngsi-ld:Piece:0001",
+  "type": "Piece",
+  "pieceID": {
+    "type": "Property",
+    "value": "0001"
+  },
+  "dateCreated": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2018-09-27T12:00:00Z"
+    }
+  },
+  "manufacturabilityOnFlexEdge": {
+    "type": "Property",
+    "value": "CanPickUpOnly"
+  },
+  "timeEstimatedOnFlexEdge": {
+    "type": "Property",
+    "value": "600"
+  },
+  "weight": {
+    "type": "Property",
+    "value": 37
+  },
+  "sequenceNumber": {
+    "type": "Property",
+    "value": 1
+  },
+  "refPieceLocation": {
+    "type": "Relationship",
+    "object": "urn:ngsi-ld:Robot:DuoCutRobot"
+  },
+  "status": {
+    "type": "Property",
+    "value": "Created"
+  }
+} 

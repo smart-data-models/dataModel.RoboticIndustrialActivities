@@ -1,0 +1,10 @@
+{
+  "id": "urn:ngsi-ld:VacuumPump:001",
+  "type": "VacuumPump",
+  "vacuumLevel": 0.95,
+  "on": false,
+  "pumpModel": "VP 123a",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

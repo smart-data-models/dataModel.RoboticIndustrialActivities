@@ -1,0 +1,12 @@
+{
+  "id": "RoboticCell.FlexEdge",
+  "type": "RoboticCell",
+  "refRobot": "Robot.FlexEdgeRobot",
+  "refVacuumPump": "VacuumPump,FlexEdgePump",
+  "refIncomingPallet": "Pallet.0003",
+  "refOutgoingPallet": "Pallet.0004",
+  "errorNumber": 0,
+  "errorMessage": "",
+  "totalNumberOfPieces": 12,
+  "currentPieceNumber": 4
+}

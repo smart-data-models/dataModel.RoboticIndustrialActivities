@@ -1,0 +1,36 @@
+{
+  "id": "RoboticCell.FlexEdge",
+  "type": "RoboticCell",
+  "refRobot": {
+    "type": "Text",
+    "value": "Robot.FlexEdgeRobot"
+  },
+  "refVacuumPump": {
+    "type": "Text",
+    "value": "VacuumPump.FlexEdgePump"
+  },
+  "refIncomingPallet": {
+    "type": "Text",
+    "value": "Pallet.0003"
+  },
+  "refOutgoingPallet": {
+    "type": "Text",
+    "value": "Pallet.0004"
+  },
+  "errorNumber": {
+    "type": "Integer",
+    "value": 0
+  },
+  "errorMessage": {
+    "type": "Text",
+    "value": ""
+  },
+  "totalNumberOfPieces": {
+    "type": "Integer",
+	"value": 12
+  },
+  "currentPieceNumber": {
+    "type": "Integer",
+	"value": 4
+  }
+}

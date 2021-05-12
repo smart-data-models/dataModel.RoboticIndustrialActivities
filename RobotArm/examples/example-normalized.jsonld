@@ -1,0 +1,38 @@
+{
+  "id": "urn:ngsi-ld:Robot:FlexEdgeRobot",
+  "type": "RobotArm",
+  "robotID": {
+    "type": "Property",
+    "value": "FlexEdgeRobot"
+  },
+  "robotModel": {
+    "type": "Property",
+    "value": "KR 12345b"
+  },
+  "toolID": {
+    "type": "Property",
+    "value": 1
+  },
+  "jobCurrentState": {
+    "type": "Property",
+    "value": "Processing"
+  },
+  "axis": {
+    "type": "Property",
+    "value": [
+      30.0,
+      14.0,
+      -55.0,
+      174.0,
+      145.0,
+      -37.0
+    ]
+  },
+  "status": {
+    "type": "Property",
+    "value": "#P_ACTIVE"
+  },
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "id": "VacuumPump.001",
+  "type": "VacuumPump",
+  "vacuumLevel": 0.95,
+  "on": false,
+  "pumpModel": "VP 123a"
+}

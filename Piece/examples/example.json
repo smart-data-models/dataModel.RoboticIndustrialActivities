@@ -1,0 +1,12 @@
+{
+  "id": "Piece.0001",
+  "type": "Piece",
+  "pieceID": "0001",
+  "dateCreated": "2018-09-27T12:00:00Z",
+  "manufacturabilityOnFlexEdge" : "canPickUpOnly",
+  "timeEstimatedOnFlexEdge": 600,
+  "weight" : 37,
+  "sequenceNumber": 1,
+  "refPieceLocation": "Robot.DuoCutRobot",
+  "status": "created"
+} 

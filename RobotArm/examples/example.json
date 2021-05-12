@@ -1,0 +1,17 @@
+{
+  "id": "Robot.FlexEdgeRobot",
+  "type": "RobotArm",
+  "robotID": "FlexEdgeRobot",
+  "robotModel": "KR 12345b",
+  "toolID": 1,
+  "jobCurrentState": "processing",
+  "axis": [
+    30.0,
+    14.0,
+    -55.0,
+    174.0,
+    145.0,
+    -37.0
+  ],
+  "status": "#P_ACTIVE"
+}

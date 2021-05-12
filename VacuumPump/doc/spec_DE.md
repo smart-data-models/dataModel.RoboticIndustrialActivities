@@ -2,11 +2,13 @@ Entität: VakuumPumpe
 ====================  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.RoboticIndustrialActivities/blob/master/VacuumPump/LICENSE.md)  
 [Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+Globale Beschreibung: **Eine Vakuumpumpe.**  
 
 ## Liste der Eigenschaften  
 
-Erforderliche Eigenschaften  
-- Keine erforderlichen Eigenschaften  ## Datenmodell Beschreibung der Eigenschaften  
+- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `location`:   - `name`: Der Name dieses Elements.  - `True`: Gibt an, ob das Gerät eingeschaltet (true) oder ausgeschaltet (false) ist.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `pumpModel`: Die Kennung des Pumpenmodells.  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `type`: Es muss VacuumPump sein. NGSI Entity-Typ.  - `vacuumLevel`: Das aktuelle Vakuumniveau, ein Wert zwischen 0 und 1.    
+Erforderliche Eigenschaften  
+- `id`  - `type`  ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
@@ -272,9 +274,69 @@ VacuumPump:
 ## Beispiel-Nutzlasten  
 #### VacuumPump NGSI-v2 key-values Beispiel  
 Hier ist ein Beispiel für eine VacuumPump im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-v2 bei Verwendung von `options=keyValues` und liefert die Kontextdaten einer einzelnen Entität.  
+```json  
+{  
+  "id": "VacuumPump.001",  
+  "type": "VacuumPump",  
+  "vacuumLevel": 0.95,  
+  "on": false,  
+  "pumpModel": "VP 123a"  
+}  
+```  
 #### VacuumPump NGSI-v2 normalisiert Beispiel  
 Hier ist ein Beispiel für eine VacuumPump im JSON-LD-Format wie normalisiert. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+```json  
+{  
+  "id": "urn:ngsi-ld:VacuumPump:FlexEdgePump",  
+  "type": "VacuumPump",  
+  "vacuumLevel": {  
+    "type": "Number",  
+    "value": 0.95  
+  },  
+  "on": {  
+    "type": "Boolean",  
+    "value": false  
+  },  
+  "pumpModel": {  
+    "type": "Text",  
+    "value": "VP 123a"  
+  }  
+}  
+```  
 #### VacuumPump NGSI-LD Schlüsselwerte Beispiel  
 Hier ist ein Beispiel für eine VacuumPump im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-LD bei Verwendung von `options=keyValues` und liefert die Kontextdaten einer einzelnen Entität.  
+```json  
+{  
+  "id": "urn:ngsi-ld:VacuumPump:001",  
+  "type": "VacuumPump",  
+  "vacuumLevel": 0.95,  
+  "on": false,  
+  "pumpModel": "VP 123a",  
+  "@context": [  
+    "https://smartdatamodels.org/context.jsonld"  
+  ]  
+}  
+```  
 #### VacuumPump NGSI-LD normalisiert Beispiel  
 Hier ist ein Beispiel für eine VacuumPump im JSON-LD-Format wie normalisiert. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+```json  
+{  
+  "id": "urn:ngsi-ld:VacuumPump:001",  
+  "type": "VacuumPump",  
+  "vacuumLevel": {  
+    "type": "Property",  
+    "value": 0.95  
+  },  
+  "on": {  
+    "type": "Property",  
+    "value": false  
+  },  
+  "pumpModel": {  
+    "type": "Property",  
+    "value": "VP 123a"  
+  },  
+  "@context": [  
+    "https://smartdatamodels.org/context.jsonld"  
+  ]  
+}  
+```  

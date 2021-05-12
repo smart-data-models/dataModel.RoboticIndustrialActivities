@@ -2,11 +2,13 @@ Entidad: Pieza
 ==============  
 [Licencia abierta](https://github.com/smart-data-models//dataModel.RoboticIndustrialActivities/blob/master/Piece/LICENSE.md)  
 [documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+Descripción global: **Una pieza a fabricar.**  
 
 ## Lista de propiedades  
 
-Propiedades requeridas  
-- No hay propiedades requeridas  ## Descripción del modelo de datos de las propiedades  
+- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `location`:   - `manufacturabilityOnFlexEdge`:   - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `pieceID`: El Id de la pieza  - `refPieceLocation`: Ubicación actual de una pieza, en el robot, en la paleta, etc.  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `sequenceNumber`: Indica la posición de la pieza en una paleta  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `status`: Indica el estado actual del artículo  - `timeEstimatedOnFlexEdge`: Número de segundos que se estima que se procesa la pieza  - `type`: Tiene que ser Piece. Tipo de entidad NGSI.  - `weight`: Indica el peso del artículo    
+Propiedades requeridas  
+- `id`  - `type`  ## Descripción del modelo de datos de las propiedades  
 Ordenados alfabéticamente (haga clic para ver los detalles)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
@@ -302,9 +304,119 @@ Piece:
 ## Ejemplo de carga útil  
 #### Pieza NGSI-v2 valores-clave Ejemplo  
 Aquí hay un ejemplo de una pieza en formato JSON-LD como valores-clave. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+```json  
+{  
+  "id": "Piece.0001",  
+  "type": "Piece",  
+  "pieceID": "0001",  
+  "dateCreated": "2018-09-27T12:00:00Z",  
+  "manufacturabilityOnFlexEdge" : "canPickUpOnly",  
+  "timeEstimatedOnFlexEdge": 600,  
+  "weight" : 37,  
+  "sequenceNumber": 1,  
+  "refPieceLocation": "Robot.DuoCutRobot",  
+  "status": "created"  
+}   
+```  
 #### Pieza NGSI-v2 normalizada Ejemplo  
 Aquí hay un ejemplo de una pieza en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+```json  
+{  
+  "id": "urn:ngsi-ld:Piece:0001",  
+  "type": "Piece",  
+  "pieceID": {  
+    "type": "Text",  
+    "value": "0001"  
+  },  
+  "dateCreated": {  
+    "type" : "DateTime",  
+    "value": "2018-09-27T12:00:00Z"  
+  },  
+  "manufacturabilityOnFlexEdge":{  
+      "type" : "Text",  
+      "value": "CanPickUpOnly"  
+  },  
+  "timeEstimatedOnFlexEdge": {  
+    "type" : "Number",  
+    "value": "600"  
+  },  
+  "weight": {  
+    "type" : "Number",  
+    "value": 37  
+  },  
+  "weight": {  
+    "type" : "sequenceNumber",  
+    "value": 1  
+  },  
+  "refpieceLocation": {  
+    "type" : "Text",  
+    "value": "urn:ngsi-ld:Robot:DuoCutRobot"  
+  },  
+  "status": {  
+    "type" : "Text",  
+    "value": "Created"  
+  }  
+}   
+```  
 #### Pieza NGSI-LD valores-clave Ejemplo  
 Aquí hay un ejemplo de una pieza en formato JSON-LD como valores-clave. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+```json  
+{  
+  "id": "urn:ngsi-ld:Piece:0001",  
+  "type": "Piece",  
+  "pieceID": "0001",  
+  "dateCreated": "2018-09-27T12:00:00Z",  
+  "manufacturabilityOnFlexEdge": "canPickUpOnly",  
+  "timeEstimatedOnFlexEdge": 600,  
+  "weight": 37,  
+  "sequenceNumber": 1,  
+  "refPieceLocation": "urn:ngsi-ld:Robot:DuoCutRobot",  
+  "status": "created",  
+  "@context": [  
+    "https://smartdatamodels.org/context.jsonld"  
+  ]  
+}   
+```  
 #### Pieza NGSI-LD normalizada Ejemplo  
 He aquí un ejemplo de una pieza en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+```json  
+{  
+  "id": "urn:ngsi-ld:Piece:0001",  
+  "type": "Piece",  
+  "pieceID": {  
+    "type": "Property",  
+    "value": "0001"  
+  },  
+  "dateCreated": {  
+    "type": "Property",  
+    "value": {  
+      "@type": "DateTime",  
+      "@value": "2018-09-27T12:00:00Z"  
+    }  
+  },  
+  "manufacturabilityOnFlexEdge": {  
+    "type": "Property",  
+    "value": "CanPickUpOnly"  
+  },  
+  "timeEstimatedOnFlexEdge": {  
+    "type": "Property",  
+    "value": "600"  
+  },  
+  "weight": {  
+    "type": "Property",  
+    "value": 37  
+  },  
+  "sequenceNumber": {  
+    "type": "Property",  
+    "value": 1  
+  },  
+  "refPieceLocation": {  
+    "type": "Relationship",  
+    "object": "urn:ngsi-ld:Robot:DuoCutRobot"  
+  },  
+  "status": {  
+    "type": "Property",  
+    "value": "Created"  
+  }  
+}   
+```  

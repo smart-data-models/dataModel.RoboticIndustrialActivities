@@ -2,11 +2,13 @@ Entität: Stück
 ==============  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.RoboticIndustrialActivities/blob/master/Piece/LICENSE.md)  
 [Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+Globale Beschreibung: **Ein herzustellendes Teil.**  
 
 ## Liste der Eigenschaften  
 
-Erforderliche Eigenschaften  
-- Keine erforderlichen Eigenschaften  ## Datenmodell Beschreibung der Eigenschaften  
+- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `location`:   - `manufacturabilityOnFlexEdge`:   - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `pieceID`: Die Id des Stücks  - `refPieceLocation`: Aktuelle Position eines Teils, am Roboter, auf der Palette usw.  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `sequenceNumber`: Zeigt die Position des Stücks auf einer Palette an  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `status`: Zeigt den aktuellen Status des Elements an  - `timeEstimatedOnFlexEdge`: Anzahl der Sekunden, die für die Bearbeitung des Stücks veranschlagt werden  - `type`: Es muss ein Stück sein. NGSI Entity-Typ.  - `weight`: Zeigt das Gewicht des Artikels an    
+Erforderliche Eigenschaften  
+- `id`  - `type`  ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
@@ -302,9 +304,119 @@ Piece:
 ## Beispiel-Nutzlasten  
 #### Stück NGSI-v2-Schlüsselwerte Beispiel  
 Hier ist ein Beispiel für ein Piece im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-v2 bei Verwendung von `options=keyValues` und liefert die Kontextdaten einer einzelnen Entität.  
+```json  
+{  
+  "id": "Piece.0001",  
+  "type": "Piece",  
+  "pieceID": "0001",  
+  "dateCreated": "2018-09-27T12:00:00Z",  
+  "manufacturabilityOnFlexEdge" : "canPickUpOnly",  
+  "timeEstimatedOnFlexEdge": 600,  
+  "weight" : 37,  
+  "sequenceNumber": 1,  
+  "refPieceLocation": "Robot.DuoCutRobot",  
+  "status": "created"  
+}   
+```  
 #### Stück NGSI-v2 normalisiert Beispiel  
 Hier ist ein Beispiel für ein Stück im JSON-LD-Format wie normalisiert. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+```json  
+{  
+  "id": "urn:ngsi-ld:Piece:0001",  
+  "type": "Piece",  
+  "pieceID": {  
+    "type": "Text",  
+    "value": "0001"  
+  },  
+  "dateCreated": {  
+    "type" : "DateTime",  
+    "value": "2018-09-27T12:00:00Z"  
+  },  
+  "manufacturabilityOnFlexEdge":{  
+      "type" : "Text",  
+      "value": "CanPickUpOnly"  
+  },  
+  "timeEstimatedOnFlexEdge": {  
+    "type" : "Number",  
+    "value": "600"  
+  },  
+  "weight": {  
+    "type" : "Number",  
+    "value": 37  
+  },  
+  "weight": {  
+    "type" : "sequenceNumber",  
+    "value": 1  
+  },  
+  "refpieceLocation": {  
+    "type" : "Text",  
+    "value": "urn:ngsi-ld:Robot:DuoCutRobot"  
+  },  
+  "status": {  
+    "type" : "Text",  
+    "value": "Created"  
+  }  
+}   
+```  
 #### Stück NGSI-LD-Schlüsselwerte Beispiel  
 Hier ist ein Beispiel für ein Piece im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-LD bei Verwendung von `options=keyValues` und liefert die Kontextdaten einer einzelnen Entität.  
+```json  
+{  
+  "id": "urn:ngsi-ld:Piece:0001",  
+  "type": "Piece",  
+  "pieceID": "0001",  
+  "dateCreated": "2018-09-27T12:00:00Z",  
+  "manufacturabilityOnFlexEdge": "canPickUpOnly",  
+  "timeEstimatedOnFlexEdge": 600,  
+  "weight": 37,  
+  "sequenceNumber": 1,  
+  "refPieceLocation": "urn:ngsi-ld:Robot:DuoCutRobot",  
+  "status": "created",  
+  "@context": [  
+    "https://smartdatamodels.org/context.jsonld"  
+  ]  
+}   
+```  
 #### Stück NGSI-LD normalisiert Beispiel  
-Hier ist ein Beispiel für ein Stück im JSON-LD-Format als normalisiert. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel für ein Stück im JSON-LD-Format wie normalisiert. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+```json  
+{  
+  "id": "urn:ngsi-ld:Piece:0001",  
+  "type": "Piece",  
+  "pieceID": {  
+    "type": "Property",  
+    "value": "0001"  
+  },  
+  "dateCreated": {  
+    "type": "Property",  
+    "value": {  
+      "@type": "DateTime",  
+      "@value": "2018-09-27T12:00:00Z"  
+    }  
+  },  
+  "manufacturabilityOnFlexEdge": {  
+    "type": "Property",  
+    "value": "CanPickUpOnly"  
+  },  
+  "timeEstimatedOnFlexEdge": {  
+    "type": "Property",  
+    "value": "600"  
+  },  
+  "weight": {  
+    "type": "Property",  
+    "value": 37  
+  },  
+  "sequenceNumber": {  
+    "type": "Property",  
+    "value": 1  
+  },  
+  "refPieceLocation": {  
+    "type": "Relationship",  
+    "object": "urn:ngsi-ld:Robot:DuoCutRobot"  
+  },  
+  "status": {  
+    "type": "Property",  
+    "value": "Created"  
+  }  
+}   
+```  

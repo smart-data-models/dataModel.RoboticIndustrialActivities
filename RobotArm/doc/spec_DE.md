@@ -295,6 +295,6 @@ RobotArm:
 #### RobotArm NGSI-v2 normalisiert Beispiel  
 Hier ist ein Beispiel für einen RobotArm im JSON-LD-Format wie normalisiert. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
 #### RobotArm NGSI-LD-Schlüsselwerte Beispiel  
-Hier ist ein Beispiel für einen RobotArm im JSON-LD-Format als Key-Values. Dies ist mit NGSI-LD kompatibel, wenn `options=keyValues` verwendet wird, und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel für einen RobotArm im JSON-LD-Format als Key-Values. Dies ist mit NGSI-LD kompatibel, wenn `options=keyValues` verwendet wird und gibt die Kontextdaten einer einzelnen Entität zurück.  
 #### RobotArm NGSI-LD normalisiert Beispiel  
 Hier ist ein Beispiel für einen RobotArm im JSON-LD-Format wie normalisiert. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  

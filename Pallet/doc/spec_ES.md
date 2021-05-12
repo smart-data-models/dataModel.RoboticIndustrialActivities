@@ -2,11 +2,13 @@ Entidad: Pallet
 ===============  
 [Licencia abierta](https://github.com/smart-data-models//dataModel.RoboticIndustrialActivities/blob/master/Pallet/LICENSE.md)  
 [documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+Descripción global: **Un palé que contiene piezas para la fabricación.**  
 
 ## Lista de propiedades  
 
-Propiedades requeridas  
-- No hay propiedades requeridas  ## Descripción del modelo de datos de las propiedades  
+- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `location`:   - `manufacturabilityOnFlexEdge`: Indica si la pieza puede ser recogida por el robot y ser procesada. Enum:'CannotPickUp, CanPickUpOnly, CanProcess'  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `palletId`: Identificador de la paleta  - `priority`: Indica la prioridad de la paleta  - `refGoingTo`: Indica a dónde va la paleta.  - `refPalletLocation`: Indica la ubicación de la paleta  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `status`: Estado actual (carga, descarga, vacío, lleno) de la paleta. Enum:'vacío, lleno, carga, descarga'  - `timeOfLoading`: Marca de tiempo de cuando las piezas fueron cargadas en la paleta.  - `type`: Tiene que ser Pallet. Tipo de entidad NGSI.    
+Propiedades requeridas  
+- `id`  - `type`  ## Descripción del modelo de datos de las propiedades  
 Ordenados alfabéticamente (haga clic para ver los detalles)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
@@ -315,9 +317,109 @@ Pallet:
 ## Ejemplo de carga útil  
 #### Pallet NGSI-v2 key-values Ejemplo  
 Aquí hay un ejemplo de una paleta en formato JSON-LD como valores-clave. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+```json  
+{  
+  "id": "Pallet.0001",  
+  "type": "Pallet",  
+  "palletID": "0001",  
+  "timeOfLoading": "2000-01-01T00:00:00Z",  
+  "refpalletLocation": "Location.ShopFloor",  
+  "refGoingTo": "RoboticCell.FlexEdge",  
+  "manufacturabilityOnFlexEdge": "canProcess",  
+  "priority": 3,  
+  "status": "loading"  
+}  
+```  
 #### Paleta NGSI-v2 normalizada Ejemplo  
 Aquí hay un ejemplo de una paleta en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+```json  
+{  
+    "id": "Pallet.0001",  
+    "type": "Pallet",  
+    "palletID":{  
+      "type" : "Text",  
+      "value": "0001"  
+    },  
+    "timeOfLoading": {  
+      "type" : "DateTime",  
+      "value": "2000-01-01T00:00:00Z"  
+    },  
+    "refPalletLocation":{  
+      "type" : "Text",  
+      "value": "Location.ShopFloor"  
+    },  
+    "refGoingTo":{  
+      "type" : "Text",  
+      "value": "RoboticCell.FlexEdge"  
+    },  
+    "manufacturabilityOnFlexEdge":{  
+      "type" : "Text",  
+      "value": "canProcess"  
+    },   
+    "priority": {  
+        "type": "Integer",  
+        "value": 3  
+    },   
+    "status": {  
+        "type": "Text",  
+        "value": "loading"  
+    }  
+}  
+```  
 #### Paleta de valores clave NGSI-LD Ejemplo  
 Aquí hay un ejemplo de una paleta en formato JSON-LD como valores-clave. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+```json  
+{  
+  "id": "urn:ngsi-ld:Pallet:0001",  
+  "type": "Pallet",  
+  "palletID": "0001",  
+  "timeOfLoading": "2000-01-01T00:00:00Z",  
+  "refPalletLocation": "urn:ngsi-ld:Location:ShopFloor",  
+  "refGoingTo": "urn:ngsi-ld:RoboticCell:FlexEdge",  
+  "manufacturabilityOnFlexEdge": "canProcess",  
+  "priority": 3,  
+  "status": "loading",  
+  "@context": [  
+    "https://smartdatamodels.org/context.jsonld"  
+  ]  
+}  
+```  
 #### Paleta NGSI-LD normalizada Ejemplo  
-Aquí hay un ejemplo de una paleta en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+Este es un ejemplo de una paleta en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+```json  
+{  
+  "id": "urn:ngsi-ld:Pallet:0001",  
+  "type": "Pallet",  
+  "palletID": {  
+    "type": "Property",  
+    "value": "0001"  
+  },  
+  "timeOfLoading": {  
+    "type": "Property",  
+    "value": {  
+      "@type": "Datetime",  
+      "@value": "2000-01-01T00:00:00Z"  
+    }  
+  },  
+  "refPalletLocation": {  
+    "type": "Relationship",  
+    "object": "urn:ngsi-ld:Location:ShopFloor"  
+  },  
+  "refGoingTo": {  
+    "type": "Relationship",  
+    "object": "urn:ngsi-ld:RoboticCell:FlexEdge"  
+  },  
+  "manufacturabilityOnFlexEdge": {  
+    "type": "Property",  
+    "value": "CanProcess"  
+  },  
+  "priority": {  
+    "type": "Property",  
+    "value": 3  
+  },  
+  "status": {  
+    "type": "Property",  
+    "value": "loading"  
+  }  
+}  
+```  

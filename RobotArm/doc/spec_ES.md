@@ -2,11 +2,13 @@ Entidad: RobotArm
 =================  
 [Licencia abierta](https://github.com/smart-data-models//dataModel.RoboticIndustrialActivities/blob/master/RobotArm/LICENSE.md)  
 [documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+Descripción global: **Un brazo robótico para mover piezas de piedra.**  
 
 ## Lista de propiedades  
 
-Propiedades requeridas  
-- No hay propiedades requeridas  ## Descripción del modelo de datos de las propiedades  
+- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `axis`: Ángulo de los diferentes ejes del brazo del robot.  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `jobCurrentState`: Estado actual del trabajo del robot. Enum:'idle, loading, processing, unloading'.  - `location`:   - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `robotId`: El identificador del robot.  - `robotModel`: El modelo de fabricación de robots.  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `status`: Estado del robot.  - `toolId`: El número de la herramienta actualmente acoplada al robot, 0 si no hay ninguna herramienta acoplada.  - `type`: Tiene que ser RobotArm. Tipo de entidad NGSI.    
+Propiedades requeridas  
+- `id`  - `type`  ## Descripción del modelo de datos de las propiedades  
 Ordenados alfabéticamente (haga clic para ver los detalles)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
@@ -292,9 +294,127 @@ RobotArm:
 ## Ejemplo de carga útil  
 #### RobotArm NGSI-v2 key-values Ejemplo  
 Aquí hay un ejemplo de un RobotArm en formato JSON-LD como valores-clave. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+```json  
+{  
+  "id": "Robot.FlexEdgeRobot",  
+  "type": "RobotArm",  
+  "robotID": "FlexEdgeRobot",  
+  "robotModel": "KR 12345b",  
+  "toolID": 1,  
+  "jobCurrentState": "processing",  
+  "axis": [  
+    30.0,  
+    14.0,  
+    -55.0,  
+    174.0,  
+    145.0,  
+    -37.0  
+  ],  
+  "status": "#P_ACTIVE"  
+}  
+```  
 #### RobotArm NGSI-v2 normalizado Ejemplo  
 Aquí hay un ejemplo de un RobotArm en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+```json  
+{  
+  "id": "Robot.FlexEdgeRobot",  
+  "type": "RobotArm",  
+  "robotId": {  
+    "type": "Text",  
+    "value": "FlexEdgeRobot"  
+  },  
+  "robotModel": {  
+    "type": "Text",  
+    "value": "KR 12345b"  
+  },  
+  "toolId": {  
+    "type": "Integer",  
+    "value": 1  
+  },  
+  "jobCurrentState": {  
+    "type": "Text",  
+    "value": "Processing"  
+  },  
+  "axis": {  
+    "type": "Array",  
+    "value": [  
+      30.0,  
+      14.0,  
+      -55.0,  
+      174.0,  
+      145.0,  
+      -37.0  
+    ]  
+  },  
+  "status": {  
+    "type": "Text",  
+    "value": "#P_ACTIVE"  
+  }  
+}  
+```  
 #### RobotArm NGSI-LD key-values Ejemplo  
 Aquí hay un ejemplo de un RobotArm en formato JSON-LD como valores-clave. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+```json  
+{  
+  "id": "urn:ngsi-ld:Robot:FlexEdgeRobot",  
+  "type": "RobotArm",  
+  "robotID": "FlexEdgeRobot",  
+  "robotModel": "KR 12345b",  
+  "toolID": 1,  
+  "jobCurrentState": "Processing",  
+  "axis": [  
+    30.0,  
+    14.0,  
+    -55.0,  
+    174.0,  
+    145.0,  
+    -37.0  
+  ],  
+  "status": "#P_ACTIVE",  
+  "@context": [  
+    "https://smartdatamodels.org/context.jsonld"  
+  ]  
+}  
+```  
 #### RobotArm NGSI-LD normalizado Ejemplo  
 Aquí hay un ejemplo de un RobotArm en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+```json  
+{  
+  "id": "urn:ngsi-ld:Robot:FlexEdgeRobot",  
+  "type": "RobotArm",  
+  "robotID": {  
+    "type": "Property",  
+    "value": "FlexEdgeRobot"  
+  },  
+  "robotModel": {  
+    "type": "Property",  
+    "value": "KR 12345b"  
+  },  
+  "toolID": {  
+    "type": "Property",  
+    "value": 1  
+  },  
+  "jobCurrentState": {  
+    "type": "Property",  
+    "value": "Processing"  
+  },  
+  "axis": {  
+    "type": "Property",  
+    "value": [  
+      30.0,  
+      14.0,  
+      -55.0,  
+      174.0,  
+      145.0,  
+      -37.0  
+    ]  
+  },  
+  "status": {  
+    "type": "Property",  
+    "value": "#P_ACTIVE"  
+  },  
+  "@context": [  
+    "https://smartdatamodels.org/context.jsonld"  
+  ]  
+}  
+```  

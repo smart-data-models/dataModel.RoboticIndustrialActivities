@@ -2,11 +2,13 @@ Entity: Pallet
 ==============  
 [Open License](https://github.com/smart-data-models//dataModel.RoboticIndustrialActivities/blob/master/Pallet/LICENSE.md)  
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+Global description: **A pallet containing pieces for manufacturing.**  
 
 ## List of properties  
 
-Required properties  
-- No required properties  ## Data Model description of properties  
+- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `id`: Unique identifier of the entity  - `location`:   - `manufacturabilityOnFlexEdge`: Indicates if the Piece can be picked up by robot and be processed. Enum:'CannotPickUp, CanPickUpOnly, CanProcess'  - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `palletId`: Identifier of the pallet  - `priority`: Indicates the priority of the pallet  - `refGoingTo`: Indicates where the pallet is going to.  - `refPalletLocation`: Indicates the location of the pallet  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `status`: Current status (loading, unloading, empty, filled) of the pallet. Enum:'empty, filled, loading, unloading'  - `timeOfLoading`: Timestamp of when the pieces were loaded onto the pallet.  - `type`: It has to be Pallet. NGSI Entity type.    
+Required properties  
+- `id`  - `type`  ## Data Model description of properties  
 Sorted alphabetically (click for details)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
@@ -315,9 +317,109 @@ Pallet:
 ## Example payloads    
 #### Pallet NGSI-v2 key-values Example    
 Here is an example of a Pallet in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
+```json  
+{  
+  "id": "Pallet.0001",  
+  "type": "Pallet",  
+  "palletID": "0001",  
+  "timeOfLoading": "2000-01-01T00:00:00Z",  
+  "refpalletLocation": "Location.ShopFloor",  
+  "refGoingTo": "RoboticCell.FlexEdge",  
+  "manufacturabilityOnFlexEdge": "canProcess",  
+  "priority": 3,  
+  "status": "loading"  
+}  
+```  
 #### Pallet NGSI-v2 normalized Example    
 Here is an example of a Pallet in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
+```json  
+{  
+    "id": "Pallet.0001",  
+    "type": "Pallet",  
+    "palletID":{  
+      "type" : "Text",  
+      "value": "0001"  
+    },  
+    "timeOfLoading": {  
+      "type" : "DateTime",  
+      "value": "2000-01-01T00:00:00Z"  
+    },  
+    "refPalletLocation":{  
+      "type" : "Text",  
+      "value": "Location.ShopFloor"  
+    },  
+    "refGoingTo":{  
+      "type" : "Text",  
+      "value": "RoboticCell.FlexEdge"  
+    },  
+    "manufacturabilityOnFlexEdge":{  
+      "type" : "Text",  
+      "value": "canProcess"  
+    },   
+    "priority": {  
+        "type": "Integer",  
+        "value": 3  
+    },   
+    "status": {  
+        "type": "Text",  
+        "value": "loading"  
+    }  
+}  
+```  
 #### Pallet NGSI-LD key-values Example    
 Here is an example of a Pallet in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
+```json  
+{  
+  "id": "urn:ngsi-ld:Pallet:0001",  
+  "type": "Pallet",  
+  "palletID": "0001",  
+  "timeOfLoading": "2000-01-01T00:00:00Z",  
+  "refPalletLocation": "urn:ngsi-ld:Location:ShopFloor",  
+  "refGoingTo": "urn:ngsi-ld:RoboticCell:FlexEdge",  
+  "manufacturabilityOnFlexEdge": "canProcess",  
+  "priority": 3,  
+  "status": "loading",  
+  "@context": [  
+    "https://smartdatamodels.org/context.jsonld"  
+  ]  
+}  
+```  
 #### Pallet NGSI-LD normalized Example    
 Here is an example of a Pallet in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
+```json  
+{  
+  "id": "urn:ngsi-ld:Pallet:0001",  
+  "type": "Pallet",  
+  "palletID": {  
+    "type": "Property",  
+    "value": "0001"  
+  },  
+  "timeOfLoading": {  
+    "type": "Property",  
+    "value": {  
+      "@type": "Datetime",  
+      "@value": "2000-01-01T00:00:00Z"  
+    }  
+  },  
+  "refPalletLocation": {  
+    "type": "Relationship",  
+    "object": "urn:ngsi-ld:Location:ShopFloor"  
+  },  
+  "refGoingTo": {  
+    "type": "Relationship",  
+    "object": "urn:ngsi-ld:RoboticCell:FlexEdge"  
+  },  
+  "manufacturabilityOnFlexEdge": {  
+    "type": "Property",  
+    "value": "CanProcess"  
+  },  
+  "priority": {  
+    "type": "Property",  
+    "value": 3  
+  },  
+  "status": {  
+    "type": "Property",  
+    "value": "loading"  
+  }  
+}  
+```  

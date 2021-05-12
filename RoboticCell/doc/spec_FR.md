@@ -2,11 +2,13 @@ Entité : RoboticCell
 ====================  
 [Licence ouverte] (https://github.com/smart-data-models//dataModel.RoboticIndustrialActivities/blob/master/RoboticCell/LICENSE.md)  
 [document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+Description globale : **Une cellule robotique.**  
 
 ## Liste des propriétés  
 
-Propriétés requises  
-- Aucune propriété requise  ## Description des propriétés du modèle de données  
+- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `currentPieceNumber`:  Nombre actuel de pièces réalisées dans l'exécution du travail sur la cellule robotique.  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `errorMessage`: Le message d'erreur correspondant au numéro de l'erreur.  - `errorNumber`: Indique si une erreur (valeur différente de 0) s'est produite sur la cellule.  - `id`: Identifiant unique de l'entité  - `location`:   - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `refIncomingPallet`: Liste des palettes fournissant des pièces entrantes pour la cellule.  - `refOutgoingPallet`: Liste des palettes fournissant des pièces sortantes pour la cellule.  - `refRobot`: Robot appartenant à la cellule.  - `refVacuumPump`: Pompe à vide appartenant à la cellule.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `totalNumberOfPieces`: Nombre total de pièces dans le travail exécuté sur la cellule robotique.  - `type`: Il doit s'agir de RoboticCell. Type d'entité NGSI.    
+Propriétés requises  
+- `id`  - `type`  ## Description des propriétés du modèle de données  
 Classés par ordre alphabétique (cliquez pour plus de détails)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
@@ -331,9 +333,119 @@ RoboticCell:
 ## Exemples de charges utiles  
 #### RoboticCell NGSI-v2 valeurs-clés Exemple  
 Voici un exemple de RoboticCell au format JSON-LD en tant que valeurs-clés. Ceci est compatible avec NGSI-v2 en utilisant `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+```json  
+{  
+  "id": "RoboticCell.FlexEdge",  
+  "type": "RoboticCell",  
+  "refRobot": "Robot.FlexEdgeRobot",  
+  "refVacuumPump": "VacuumPump,FlexEdgePump",  
+  "refIncomingPallet": "Pallet.0003",  
+  "refOutgoingPallet": "Pallet.0004",  
+  "errorNumber": 0,  
+  "errorMessage": "",  
+  "totalNumberOfPieces": 12,  
+  "currentPieceNumber": 4  
+}  
+```  
 #### RoboticCell NGSI-v2 normalisé Exemple  
 Voici un exemple de RoboticCell au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+```json  
+{  
+  "id": "RoboticCell.FlexEdge",  
+  "type": "RoboticCell",  
+  "refRobot": {  
+    "type": "Text",  
+    "value": "Robot.FlexEdgeRobot"  
+  },  
+  "refVacuumPump": {  
+    "type": "Text",  
+    "value": "VacuumPump.FlexEdgePump"  
+  },  
+  "refIncomingPallet": {  
+    "type": "Text",  
+    "value": "Pallet.0003"  
+  },  
+  "refOutgoingPallet": {  
+    "type": "Text",  
+    "value": "Pallet.0004"  
+  },  
+  "errorNumber": {  
+    "type": "Integer",  
+    "value": 0  
+  },  
+  "errorMessage": {  
+    "type": "Text",  
+    "value": ""  
+  },  
+  "totalNumberOfPieces": {  
+    "type": "Integer",  
+	"value": 12  
+  },  
+  "currentPieceNumber": {  
+    "type": "Integer",  
+	"value": 4  
+  }  
+}  
+```  
 #### RoboticCell NGSI-LD valeurs-clés Exemple  
 Voici un exemple de RoboticCell au format JSON-LD en tant que valeurs-clés. Ceci est compatible avec NGSI-LD en utilisant `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+```json  
+{  
+  "id": "urn:ngsi-ld:RoboticCell:FlexEdge",  
+  "type": "RoboticCell",  
+  "refRobot": "urn:ngsi-ld:Robot:FlexEdgeRobot",  
+  "refVacuumPump": "urn:ngsi-ld:VacuumPump:FlexEdgePump",  
+  "refIncomingPallet": "urn:ngsi-ld:Pallet:0003",  
+  "refOutgoingPallet": "urn:ngsi-ld:Pallet:0004",  
+  "errorNumber": 0,  
+  "errorMessage": "",  
+  "totalNumberOfPieces": 12,  
+  "currentPieceNumber": 4,  
+  "@context": [  
+    "https://smartdatamodels.org/context.jsonld"  
+  ]  
+}  
+```  
 #### RoboticCell NGSI-LD normalisé Exemple  
 Voici un exemple de RoboticCell au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+```json  
+{  
+  "id": "urn:ngsi-ld:RoboticCell:FlexEdge",  
+  "type": "RoboticCell",  
+  "refRobot": {  
+    "type": "Relationship",  
+    "value": "urn:ngsi-ld:Robot:FlexEdgeRobot"  
+  },  
+  "refVacuumPump": {  
+    "type": "Relationship",  
+    "object": "urn:ngsi-ld:VacuumPump:FlexEdgePump"  
+  },  
+  "refIncomingPallet": {  
+    "type": "Relationship",  
+    "object": "urn:ngsi-ld:Pallet:0003"  
+  },  
+  "refOutgoingPallet": {  
+    "type": "Relationship",  
+    "object": "urn:ngsi-ld:Pallet:0004"  
+  },  
+  "errorNumber": {  
+    "type": "Property",  
+    "value": 0  
+  },  
+  "errorMessage": {  
+    "type": "Property",  
+    "value": ""  
+  },  
+  "totalNumberOfPieces": {  
+    "type": "Property",  
+	"value": 12  
+  },  
+  "currentPieceNumber": {  
+    "type": "Property",  
+	"value": 4  
+  },  
+  "@context": [  
+    "https://smartdatamodels.org/context.jsonld"  
+  ]  
+}  
+```  

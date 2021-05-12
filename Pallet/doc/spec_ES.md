@@ -320,4 +320,4 @@ Pallet:
 #### Paleta de valores clave NGSI-LD Ejemplo  
 Aquí hay un ejemplo de una paleta en formato JSON-LD como valores-clave. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
 #### Paleta NGSI-LD normalizada Ejemplo  
-Aquí hay un ejemplo de una paleta en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+Este es un ejemplo de una paleta en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  

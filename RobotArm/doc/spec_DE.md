@@ -353,7 +353,7 @@ RobotArm:
 }  
 ```  
 #### RobotArm NGSI-LD-Schlüsselwerte Beispiel  
-Hier ist ein Beispiel für einen RobotArm im JSON-LD-Format als Key-Values. Dies ist mit NGSI-LD kompatibel, wenn `options=keyValues` verwendet wird, und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel für einen RobotArm im JSON-LD-Format als Key-Values. Dies ist mit NGSI-LD kompatibel, wenn `options=keyValues` verwendet wird und gibt die Kontextdaten einer einzelnen Entität zurück.  
 ```json  
 {  
   "id": "urn:ngsi-ld:Robot:FlexEdgeRobot",  

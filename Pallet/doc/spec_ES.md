@@ -385,7 +385,7 @@ Pallet:
 }  
 ```  
 #### Paleta NGSI-LD normalizada Ejemplo  
-Este es un ejemplo de una paleta en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+Aquí hay un ejemplo de una paleta en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
 ```json  
 {  
   "id": "urn:ngsi-ld:Pallet:0001",  

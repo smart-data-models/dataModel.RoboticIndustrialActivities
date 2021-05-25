@@ -4,8 +4,8 @@ currentAdopters:
 -
  adopter: Robotic applications using vacuum for lifting goods.
  description: Data about vacuumlevel and the type of a vacuumpump
- mail: 
+ mail: jan.vanelsacker@optidrive.be
  organization: 
- project: 
+ project: https://github.com/ramp-eu/JS2SF/blob/master/ReadMe.md
  comments: 
- startDate: 
+ startDate: 2021/05/25

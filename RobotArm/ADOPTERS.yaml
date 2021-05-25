@@ -4,8 +4,8 @@ currentAdopters:
 -
  adopter: An industrial robot arm
  description: Data coming directly from the robot controller
- mail: 
+ mail: jan.vanelsacker@optidrive.be
  organization: 
- project: 
+ project: https://github.com/ramp-eu/JS2SF/blob/master/ReadMe.md
  comments: 
- startDate: 
+ startDate: 2021/05/25

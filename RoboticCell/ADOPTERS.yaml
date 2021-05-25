@@ -3,9 +3,9 @@ description: This is a compilation list of the current adopters of the data mode
 currentAdopters:
 -
  adopter: Robotic cell in stone processing industry
- description: Data about robot and its environment
- mail: 
+ description: Data about robot and its environment displayed in a dashboard.
+ mail: jan.vanelsacker@optidrive.be
  organization: 
- project: 
+ project: https://github.com/ramp-eu/JS2SF/blob/master/ReadMe.md
  comments: 
- startDate: 
+ startDate: 2021/05/25

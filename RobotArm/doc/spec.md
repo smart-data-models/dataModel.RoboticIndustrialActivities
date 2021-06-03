@@ -1,17 +1,270 @@
 Entity: RobotArm  
-================  
-[Open License](https://github.com/smart-data-models//dataModel.RoboticIndustrialActivities/blob/master/RobotArm/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Global description: **A robotic arm for moving stone pieces.**  
+================
+  
 
-## List of properties  
+[Open License](https://github.com/smart-data-models//dataModel.RoboticIndustrialActivities/blob/master/RobotArm/LICENSE.md)  
 
-- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `axis`: Angle of the different axis on the robot arm.  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `id`: Unique identifier of the entity  - `jobCurrentState`: Current status of the robot job. Enum:'idle, loading, processing, unloading'.  - `location`:   - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `robotId`: The robot identifier.  - `robotModel`: The robot manufacturing model.  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `status`: Status of the robot.  - `toolId`: The number of the tool currently attached to the robot, 0 if no tool attached.  - `type`: It has to be RobotArm. NGSI Entity type.    
-Required properties  
-- `id`  - `type`  ## Data Model description of properties  
-Sorted alphabetically (click for details)  
+[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+
+Global description: **A robotic arm for moving stone pieces.**  
+
+
+## List of properties  
+
+
+- `address`: The mailing address  
+- `alternateName`: An alternative name for this item  
+- `areaServed`: The geographic area where a service or offered item is provided  
+- `axis`: Angle of the different axis on the robot arm.  
+- `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  
+- `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  
+- `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  
+- `description`: A description of this item  
+- `id`: Unique identifier of the entity  
+- `jobCurrentState`: Current status of the robot job. Enum:'idle, loading, processing, unloading'.  
+- `location`:   
+- `name`: The name of this item.  
+- `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  
+- `robotId`: The robot identifier.  
+- `robotModel`: The robot manufacturing model.  
+- `seeAlso`: list of uri pointing to additional resources about the item  
+- `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  
+- `status`: Status of the robot.  
+- `toolId`: The number of the tool currently attached to the robot, 0 if no tool attached.  
+- `type`: It has to be RobotArm. NGSI Entity type.  
+
+-   `serialNumber` : The robot serial number.
+
+    -   Attribute type: Property. [Integer](https://schema.org/Integer) 
+
+-   `proState0` : Program state in the submit interpreter: #P_FREE, #P_ACTIVE, #P_END, #P_RESET, #P_STOP.
+    -   Attribute type: Property. [Text](https://schema.org/Text) 
+
+-   `proState1` : Program state in the robot interpreter: #P_FREE, #P_ACTIVE, #P_END, #P_RESET, #P_STOP.
+
+    -   Attribute type: Property. [Text](https://schema.org/Text) 
+
+-   `drivesOn` : Indicates robot drives are on.
+    -   Attribute type: Property. [Boolean](https://schema.org/Boolean)
+
+-   `drivesOff` : Indicates robot drives are off.
+    -   Attribute type: Property. [Boolean](https://schema.org/Boolean)
+
+-   `peripheryReady` : Indicates periphery is ready, for example robot cell door locked.
+    -   Attribute type: Property. [Boolean](https://schema.org/Boolean)
+
+-   `emergencyStop` : Indicates robot is in emergency stop.
+
+    -   Attribute type: Property. [Boolean](https://schema.org/Boolean)
+
+-   `operatingMode` : Operating mode of the robot: "#T1", "#T2", "#AUT", "#EXT".
+
+    -   Attribute type: Property. [Text](https://schema.org/Text) 
+
+-   `positionX` : Indicates the robot position.
+
+    -   Attribute type: Property. [Number](https://schema.org/Number) 
+
+-   `positionY` : Indicates the robot position.
+
+    -   Attribute type: Property. [Number](https://schema.org/Number) 
+
+-   `positionZ` : Indicates the robot position.
+
+    -   Attribute type: Property. [Number](https://schema.org/Number) 
+
+-   `positionA` : Indicates the robot position.
+
+    -   Attribute type: Property. [Number](https://schema.org/Number) 
+
+-   `positionB` : Indicates the robot position.
+
+    -   Attribute type: Property. [Number](https://schema.org/Number) 
+
+-   `positionC` : Indicates the robot position.
+
+    -   Attribute type: Property. [Number](https://schema.org/Number) 
+
+-   `toolX` : Indicates the tool position.
+
+    -   Attribute type: Property. [Number](https://schema.org/Number) 
+
+-   `toolY` : Indicates the tool position.
+
+    -   Attribute type: Property. [Number](https://schema.org/Number) 
+
+-   `toolZ` : Indicates the tool position.
+
+    -   Attribute type: Property. [Number](https://schema.org/Number) 
+
+-   `toolA` : Indicates the tool position.
+
+    -   Attribute type: Property. [Number](https://schema.org/Number) 
+
+-   `toolB` : Indicates the tool position.
+
+    -   Attribute type: Property. [Number](https://schema.org/Number) 
+
+-   `toolC` : Indicates the tool position.
+
+    -   Attribute type: Property. [Number](https://schema.org/Number) 
+
+-   `baseX` : Indicates the base location.
+
+    -   Attribute type: Property. [Number](https://schema.org/Number) 
+
+-   `baseY` : Indicates the base location.
+
+    -   Attribute type: Property. [Number](https://schema.org/Number) 
+
+-   `baseZ` : Indicates the base location.
+
+    -   Attribute type: Property. [Number](https://schema.org/Number) 
+
+-   `baseA` : Indicates the base location.
+
+    -   Attribute type: Property. [Number](https://schema.org/Number) 
+
+-   `baseB` : Indicates the base location.
+
+    -   Attribute type: Property. [Number](https://schema.org/Number) 
+
+-   `baseC` : Indicates the base location.
+
+    -   Attribute type: Property. [Number](https://schema.org/Number) 
+
+-   `angleAxis1` : Indicates angle of the axis.
+
+    -   Attribute type: Property. [Number](https://schema.org/Number) 
+
+-   `angleAxis2` : Indicates angle of the axis.
+
+    -   Attribute type: Property. [Number](https://schema.org/Number) 
+
+-   `angleAxis3` : Indicates angle of the axis.
+
+    -   Attribute type: Property. [Number](https://schema.org/Number) 
+
+-   `angleAxis4` : Indicates angle of the axis.
+
+    -   Attribute type: Property. [Number](https://schema.org/Number) 
+
+-   `angleAxis5` : Indicates angle of the axis.
+
+    -   Attribute type: Property. [Number](https://schema.org/Number) 
+
+-   `angleAxis6` : Indicates angle of the axis.
+
+    -   Attribute type: Property. [Number](https://schema.org/Number) 
+
+-   `torqueAxis1` : Indicates torque of the axis.
+
+    -   Attribute type: Property. [Number](https://schema.org/Number) 
+
+-   `torqueAxis2` : Indicates torque of the axis.
+
+    -   Attribute type: Property. [Number](https://schema.org/Number) 
+
+-   `torqueAxis3` : Indicates torque of the axis.
+
+    -   Attribute type: Property. [Number](https://schema.org/Number) 
+
+-   `torqueAxis4` : Indicates torque of the axis.
+
+    -   Attribute type: Property. [Number](https://schema.org/Number) 
+
+-   `torqueAxis5` : Indicates torque of the axis.
+
+    -   Attribute type: Property. [Number](https://schema.org/Number) 
+
+-   `torqueAxis6` : Indicates torque of the axis.
+
+    -   Attribute type: Property. [Number](https://schema.org/Number) 
+
+-   `maxTorqueAxis1` : Indicates the max torque of the axis.
+
+    -   Attribute type: Property. [Number](https://schema.org/Number) 
+
+-   `maxTorqueAxis2` : Indicates the max torque of the axis.
+
+    -   Attribute type: Property. [Number](https://schema.org/Number) 
+
+-   `maxTorqueAxis3` : Indicates the max torque of the axis.
+
+    -   Attribute type: Property. [Number](https://schema.org/Number) 
+
+-   `maxTorqueAxis4` : Indicates the max torque of the axis.
+
+    -   Attribute type: Property. [Number](https://schema.org/Number) 
+
+-   `maxTorqueAxis5` : Indicates the max torque of the axis.
+
+    -   Attribute type: Property. [Number](https://schema.org/Number) 
+
+-   `maxTorqueAxis6` : Indicates the max torque of the axis.
+
+    -   Attribute type: Property. [Number](https://schema.org/Number) 
+
+-   `velocityAxis1` : Indicates velocity of the axis.
+
+    -   Attribute type: Property. [Number](https://schema.org/Number) 
+
+-   `velocityAxis2` : Indicates velocity of the axis.
+
+    -   Attribute type: Property. [Number](https://schema.org/Number) 
+
+-   `velocityAxis3` : Indicates velocity of the axis.
+
+    -   Attribute type: Property. [Number](https://schema.org/Number) 
+
+-   `velocityAxis4` : Indicates velocity of the axis.
+
+    -   Attribute type: Property. [Number](https://schema.org/Number) 
+
+-   `velocityAxis5` : Indicates velocity of the axis.
+
+    -   Attribute type: Property. [Number](https://schema.org/Number) 
+
+-   `velocityAxis6` : Indicates velocity of the axis.
+
+    -   Attribute type: Property. [Number](https://schema.org/Number) 
+
+-   `maxVelocityAxis1` : Indicates the max velocity of the axis.
+
+    -   Attribute type: Property. [Number](https://schema.org/Number) 
+
+-   `maxVelocityAxis2` : Indicates the max velocity of the axis.
+
+    -   Attribute type: Property. [Number](https://schema.org/Number) 
+
+-   `maxVelocityAxis3` : Indicates the max velocity of the axis.
+
+    -   Attribute type: Property. [Number](https://schema.org/Number) 
+
+-   `maxVelocityAxis4` : Indicates the max velocity of the axis.
+
+    -   Attribute type: Property. [Number](https://schema.org/Number) 
+
+-   `maxVelocityAxis5` : Indicates the max velocity of the axis.
+
+    -   Attribute type: Property. [Number](https://schema.org/Number) 
+
+-   `maxVelocityAxis6` : Indicates the max velocity of the axis.
+
+    -   Attribute type: Property. [Number](https://schema.org/Number) 
+  
+
+Required properties  
+- `id`  
+- `type`
+- `serialNumber`
+
+## Data Model description of properties  
+
+Sorted alphabetically (click for details)  
 <details><summary><strong>full yaml details</strong></summary>    
-```yaml  
+
+```yaml  
 RobotArm:    
   description: 'A robotic arm for moving stone pieces.'    
   properties:    
@@ -291,11 +544,16 @@ RobotArm:
   type: object    
 ```  
 </details>    
-## Example payloads    
-#### RobotArm NGSI-v2 key-values Example    
-Here is an example of a RobotArm in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
-```json  
-{  
+
+## Example payloads    
+
+#### RobotArm NGSI-v2 key-values Example    
+
+Here is an example of a RobotArm in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
+
+```json  
+
+{  
   "id": "Robot.FlexEdgeRobot",  
   "type": "RobotArm",  
   "robotID": "FlexEdgeRobot",  
@@ -313,10 +571,14 @@ RobotArm:
   "status": "#P_ACTIVE"  
 }  
 ```  
-#### RobotArm NGSI-v2 normalized Example    
-Here is an example of a RobotArm in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
-```json  
-{  
+
+#### RobotArm NGSI-v2 normalized Example    
+
+Here is an example of a RobotArm in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
+
+```json  
+
+{  
   "id": "Robot.FlexEdgeRobot",  
   "type": "RobotArm",  
   "robotId": {  
@@ -352,10 +614,14 @@ RobotArm:
   }  
 }  
 ```  
-#### RobotArm NGSI-LD key-values Example    
-Here is an example of a RobotArm in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
-```json  
-{  
+
+#### RobotArm NGSI-LD key-values Example    
+
+Here is an example of a RobotArm in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:Robot:FlexEdgeRobot",  
   "type": "RobotArm",  
   "robotID": "FlexEdgeRobot",  
@@ -376,10 +642,14 @@ RobotArm:
   ]  
 }  
 ```  
-#### RobotArm NGSI-LD normalized Example    
-Here is an example of a RobotArm in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
-```json  
-{  
+
+#### RobotArm NGSI-LD normalized Example    
+
+Here is an example of a RobotArm in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:Robot:FlexEdgeRobot",  
   "type": "RobotArm",  
   "robotID": {  

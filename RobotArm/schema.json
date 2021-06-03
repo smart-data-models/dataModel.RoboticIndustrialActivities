@@ -13,52 +13,204 @@
       "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
     },
     {
-      "properties": {
-        "type": {
-          "type": "string",
-          "enum": [
-            "RobotArm"
-          ],
-          "description": "Property. It has to be RobotArm. NGSI Entity type."
-        },
-        "robotId": {
-          "type": "string",
-          "description": "Property. Model:'https://schema.org/Text'. The robot identifier."
-        },
-        "robotModel": {
-          "type": "string",
-          "description": "Property. Model:'https://schema.org/Text'. The robot manufacturing model."
-        },
-        "toolId": {
-          "type": "integer",
-          "description": "Property. Model:'https://schema.org/Text'. The number of the tool currently attached to the robot, 0 if no tool attached."
-        },
-        "jobCurrentState": {
-          "type": "string",
-          "description": "Property. Model:'https://schema.org/Text'. Current status of the robot job. Enum:'idle, loading, processing, unloading'.",
-          "enum": [
-            "idle",
-            "loading",
-            "processing",
-            "unloading"
-          ]
-        },
-        "axis": {
-          "type": "array",
-          "description": "Property. Model:'https://schema.org/Number'. Angle of the different axis on the robot arm.",
-          "items": {
-            "type": "number"
-          }
-        },
-        "status": {
-          "type": "string",
-          "description": "Property. Model:'https://schema.org/Number'. Status of the robot."
-        }
-      }
+    "properties": {
+    "id": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "serialNumber": {
+      "type": "integer"
+    },
+    "proState0": {
+      "type": "string",
+	  "enum": [
+		"#P_FREE",
+		"#P_ACTIVE",
+		"#P_END",
+		"#P_RESET",
+		"#P_STOP"
+	  ]
+    },
+    "proState1": {
+      "type": "string",
+	  "enum": [
+		"#P_FREE",
+		"#P_ACTIVE",
+		"#P_END",
+		"#P_RESET",
+		"#P_STOP"
+    },
+    "drivesOn": {
+      "type": "boolean"
+    },
+    "drivesOff": {
+      "type": "boolean"
+    },
+    "peripheryReady": {
+      "type": "boolean"
+    },
+    "emergencyStop": {
+      "type": "boolean"
+    },
+    "operatingMode": {
+      "type": "string",
+	  "enum": [
+		"#T1",
+		"#T2",
+		"#AUT",
+		"#EXT"
+    },
+    "positionX": {
+      "type": "number"
+    },
+    "positionY": {
+      "type": "number"
+    },
+    "positionZ": {
+      "type": "number"
+    },
+    "positionA": {
+      "type": "number"
+    },
+    "positionB": {
+      "type": "number"
+    },
+    "positionC": {
+      "type": "number"
+    },
+    "toolX": {
+      "type": "number"
+    },
+    "toolY": {
+      "type": "number"
+    },
+    "toolZ": {
+      "type": "number"
+    },
+    "toolA": {
+      "type": "number"
+    },
+    "toolB": {
+      "type": "number"
+    },
+    "toolC": {
+      "type": "number"
+    },
+    "baseX": {
+      "type": "number"
+    },
+    "baseY": {
+      "type": "number"
+    },
+    "baseZ": {
+      "type": "number"
+    },
+    "baseA": {
+      "type": "number"
+    },
+    "baseB": {
+      "type": "number"
+    },
+    "baseC": {
+      "type": "number"
+    },
+    "angleAxis1": {
+      "type": "number"
+    },
+    "angleAxis2": {
+      "type": "number"
+    },
+    "angleAxis3": {
+      "type": "number"
+    },
+    "angleAxis4": {
+      "type": "number"
+    },
+    "angleAxis5": {
+      "type": "number"
+    },
+    "angleAxis6": {
+      "type": "number"
+    },
+    "torqueAxis1": {
+      "type": "number"
+    },
+    "torqueAxis2": {
+      "type": "number"
+    },
+    "torqueAxis3": {
+      "type": "number"
+    },
+    "torqueAxis4": {
+      "type": "number"
+    },
+    "torqueAxis5": {
+      "type": "number"
+    },
+    "torqueAxis6": {
+      "type": "number"
+    },
+    "maxTorqueAxis1": {
+      "type": "number"
+    },
+    "maxTorqueAxis2": {
+      "type": "number"
+    },
+    "maxTorqueAxis3": {
+      "type": "number"
+    },
+    "maxTorqueAxis4": {
+      "type": "number"
+    },
+    "maxTorqueAxis5": {
+      "type": "number"
+    },
+    "maxTorqueAxis6": {
+      "type": "number"
+    },
+    "velocityAxis1": {
+      "type": "number"
+    },
+    "velocityAxis2": {
+      "type": "number"
+    },
+    "velocityAxis3": {
+      "type": "number"
+    },
+    "velocityAxis4": {
+      "type": "number"
+    },
+    "velocityAxis5": {
+      "type": "number"
+    },
+    "velocityAxis6": {
+      "type": "number"
+    },
+    "maxVelocityAxis1": {
+      "type": "number"
+    },
+    "maxVelocityAxis2": {
+      "type": "number"
+    },
+    "maxVelocityAxis3": {
+      "type": "number"
+    },
+    "maxVelocityAxis4": {
+      "type": "number"
+    },
+    "maxVelocityAxis5": {
+      "type": "number"
+    },
+    "maxVelocityAxis6": {
+      "type": "number"
     }
+  }
   ],
   "required": [
     "id",
-    "type"
+    "type",
+    "serialNumber"
   ]
 }

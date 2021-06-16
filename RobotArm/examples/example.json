@@ -1,7 +1,7 @@
 {
   "id": "urn:ngsi-ld:Robot:876543",
-  "type": "Robot",
-  "serialNumber": 876543 ,
+  "type": "RobotArm",
+  "serialNumber": 876543,
   "proState0": "#P_FREE",
   "proState1": "#P_FREE",
   "drivesOn": false,

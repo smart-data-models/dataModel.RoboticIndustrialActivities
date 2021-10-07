@@ -226,11 +226,14 @@ Piece:
       x-ngsi:
         type: Geoproperty
     manufacturabilityOnFlexEdge:
+      description: 'Indicates if the Piece can be picked up by robot and be processed. Enum:''canPickUpOnly, cannotPickUp, canProcess'''
       enum:
         - canPickUpOnly
         - cannotPickUp
         - canProcess
       type: string
+      x-ngsi:
+        type: Property
     name:
       description: 'The name of this item.'
       type: string
@@ -319,3 +322,4 @@ Piece:
     - id
     - type
   type: object
+  version: 0.0.2

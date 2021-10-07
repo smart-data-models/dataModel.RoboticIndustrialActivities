@@ -1,0 +1,2 @@
+"id_", "type_", "pieceID__type_", "pieceID__value_", "dateCreated__type_", "dateCreated__value_", "manufacturabilityOnFlexEdge__type_", "manufacturabilityOnFlexEdge__value_", "timeEstimatedOnFlexEdge__type_", "timeEstimatedOnFlexEdge__value_", "weight__type_", "weight__value_", "refpieceLocation__type_", "refpieceLocation__value_", "status__type_", "status__value_"
+"urn:ngsi-ld:Piece:0001", "Piece", "Text", "0001", "DateTime", "2018-09-27T12:00:00Z", "Text", "CanPickUpOnly", "Number", "600", "sequenceNumber", "1", "Text", "urn:ngsi-ld:Robot:DuoCutRobot", "Text", "Created"

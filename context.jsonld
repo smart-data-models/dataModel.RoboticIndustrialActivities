@@ -1,6 +1,5 @@
 {
     "@context": {
-        "True": "https://smartdatamodels.org/dataModel.RoboticIndustrialActivities/True",
         "address": "https://smartdatamodels.org/dataModel.RoboticIndustrialActivities/address",
         "alternateName": "https://smartdatamodels.org/dataModel.RoboticIndustrialActivities/alternateName",
         "areaServed": "https://smartdatamodels.org/dataModel.RoboticIndustrialActivities/areaServed",
@@ -17,6 +16,7 @@
         "location": "https://smartdatamodels.org/dataModel.RoboticIndustrialActivities/location",
         "manufacturabilityOnFlexEdge": "https://smartdatamodels.org/dataModel.RoboticIndustrialActivities/manufacturabilityOnFlexEdge",
         "name": "https://smartdatamodels.org/dataModel.RoboticIndustrialActivities/name",
+        "on": "https://smartdatamodels.org/dataModel.RoboticIndustrialActivities/on",
         "owner": "https://smartdatamodels.org/dataModel.RoboticIndustrialActivities/owner",
         "palletId": "https://smartdatamodels.org/dataModel.RoboticIndustrialActivities/palletId",
         "pieceID": "https://smartdatamodels.org/dataModel.RoboticIndustrialActivities/pieceID",

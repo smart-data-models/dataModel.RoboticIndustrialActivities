@@ -11,7 +11,7 @@
         "description": "https://smartdatamodels.org/dataModel.RoboticIndustrialActivities/description",
         "errorMessage": "https://smartdatamodels.org/dataModel.RoboticIndustrialActivities/errorMessage",
         "errorNumber": "https://smartdatamodels.org/dataModel.RoboticIndustrialActivities/errorNumber",
-        "id": "@id",
+        "id": "https://smartdatamodels.org/dataModel.RoboticIndustrialActivities/id",
         "jobCurrentState": "https://smartdatamodels.org/dataModel.RoboticIndustrialActivities/jobCurrentState",
         "location": "https://smartdatamodels.org/dataModel.RoboticIndustrialActivities/location",
         "manufacturabilityOnFlexEdge": "https://smartdatamodels.org/dataModel.RoboticIndustrialActivities/manufacturabilityOnFlexEdge",
@@ -39,7 +39,7 @@
         "timeOfLoading": "https://smartdatamodels.org/dataModel.RoboticIndustrialActivities/timeOfLoading",
         "toolId": "https://smartdatamodels.org/dataModel.RoboticIndustrialActivities/toolId",
         "totalNumberOfPieces": "https://smartdatamodels.org/dataModel.RoboticIndustrialActivities/totalNumberOfPieces",
-        "type": "@type",
+        "type": "https://smartdatamodels.org/dataModel.RoboticIndustrialActivities/type",
         "vacuumLevel": "https://smartdatamodels.org/dataModel.RoboticIndustrialActivities/vacuumLevel",
         "weight": "https://smartdatamodels.org/dataModel.RoboticIndustrialActivities/weight"
     }

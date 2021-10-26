@@ -6,7 +6,7 @@ Version: 0.0.2
 A robotic arm for moving stone pieces.
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.RoboticIndustrialActivities/blob/master/RobotArm/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.RoboticIndustrialActivities/master/RobotArm/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.RoboticIndustrialActivities/blob/master/RobotArm/doc/spec.md)
 

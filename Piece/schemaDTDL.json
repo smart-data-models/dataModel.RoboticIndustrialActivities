@@ -1,0 +1,238 @@
+{
+    "@id": "dtmi:com:ngsi-ld:Piece;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": " Smart Data Models- Piece schema adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.RoboticIndustrialActivities/master/Piece/schema.json",
+    "description": "A Piece to be manufactured.",
+    "displayName": "Piece",
+    "contents": [
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item."
+        },
+        {
+            "name": "pieceID",
+            "writable": true,
+            "displayName": "pieceID",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The Id of the piece"
+        },
+        {
+            "name": "refPieceLocation",
+            "writable": true,
+            "displayName": "refPieceLocation"
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "sequenceNumber",
+            "writable": true,
+            "displayName": "sequenceNumber",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Indicates the position of the piece on a pallet"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+        },
+        {
+            "name": "timeEstimatedOnFlexEdge",
+            "writable": true,
+            "displayName": "timeEstimatedOnFlexEdge",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Number of seconds it is estimated to process the piece"
+        },
+        {
+            "name": "weight",
+            "writable": true,
+            "displayName": "weight",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Indicates the weight off the item"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Point",
+            "schema": "point"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_LineString",
+            "schema": "lineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Polygon",
+            "schema": "polygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPoint",
+            "schema": "multiPoint"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiLineString",
+            "schema": "multiLineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPolygon",
+            "schema": "multiPolygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "manufacturabilityOnFlexEdge",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": "canPickUpOnly",
+                        "displayName": "canPickUpOnly",
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "cannotPickUp",
+                        "displayName": "cannotPickUp",
+                        "enumValue": 2
+                    },
+                    {
+                        "name": "canProcess",
+                        "displayName": "canProcess",
+                        "enumValue": 3
+                    }
+                ]
+            }
+        },
+        {
+            "@type": "Telemetry",
+            "name": "status",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": "created",
+                        "displayName": "created",
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "inProcess",
+                        "displayName": "inProcess",
+                        "enumValue": 2
+                    },
+                    {
+                        "name": "finished",
+                        "displayName": "finished",
+                        "enumValue": 3
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,15 +1,15 @@
 {
-  "id": "urn:ngsi-ld:RoboticCell:FlexEdge",
-  "type": "RoboticCell",
-  "refRobot": "urn:ngsi-ld:Robot:FlexEdgeRobot",
-  "refVacuumPump": "urn:ngsi-ld:VacuumPump:FlexEdgePump",
-  "refIncomingPallet": "urn:ngsi-ld:Pallet:0003",
-  "refOutgoingPallet": "urn:ngsi-ld:Pallet:0004",
-  "errorNumber": 0,
-  "errorMessage": "",
-  "totalNumberOfPieces": 12,
-  "currentPieceNumber": 4,
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld"
-  ]
+    "id": "urn:ngsi-ld:RoboticCell:FlexEdge",
+    "type": "RoboticCell",
+    "currentPieceNumber": 4,
+    "errorMessage": "",
+    "errorNumber": 0,
+    "refIncomingPallet": "urn:ngsi-ld:Pallet:0003",
+    "refOutgoingPallet": "urn:ngsi-ld:Pallet:0004",
+    "refRobot": "urn:ngsi-ld:Robot:FlexEdgeRobot",
+    "refVacuumPump": "urn:ngsi-ld:VacuumPump:FlexEdgePump",
+    "totalNumberOfPieces": 12,
+    "@context": [
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.RoboticIndustrialActivities/master/context.jsonld"
+    ]
 }

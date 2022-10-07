@@ -35,5 +35,8 @@
     "weight": {
         "type": "Property",
         "value": 37
-    }
+    },
+    "@context": [
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.RoboticIndustrialActivities/master/context.jsonld"
+    ]
 }

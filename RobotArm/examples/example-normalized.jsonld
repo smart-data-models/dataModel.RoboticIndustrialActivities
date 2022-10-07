@@ -32,5 +32,7 @@
         "type": "Property",
         "value": 1
     },
-    "@context": []
+    "@context": [
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.RoboticIndustrialActivities/master/context.jsonld"
+    ]
 }

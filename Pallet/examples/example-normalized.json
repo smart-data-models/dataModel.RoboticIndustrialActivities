@@ -1,34 +1,34 @@
 {
-    "id": "Pallet.0001",
-    "type": "Pallet",
-    "palletID":{
-      "type" : "Text",
-      "value": "0001"
-    },
-    "timeOfLoading": {
-      "type" : "DateTime",
-      "value": "2000-01-01T00:00:00Z"
-    },
-    "refPalletLocation":{
-      "type" : "Text",
-      "value": "Location.ShopFloor"
-    },
-    "refGoingTo":{
-      "type" : "Text",
-      "value": "RoboticCell.FlexEdge"
-    },
-    "manufacturabilityOnFlexEdge":{
-      "type" : "Text",
-      "value": "canProcess"
-    }, 
-    "priority": {
-        "type": "Integer",
-        "value": 3
-    }, 
-    "status": {
-        "type": "Text",
-        "value": "loading"
-    }
+  "id": "Pallet.0001",
+  "type": "Pallet",
+  "palletID": {
+    "type": "Text",
+    "value": "0001"
+  },
+  "timeOfLoading": {
+    "type": "DateTime",
+    "value": "2000-01-01T00:00:00Z"
+  },
+  "refPalletLocation": {
+    "type": "Text",
+    "value": "Location.ShopFloor"
+  },
+  "refGoingTo": {
+    "type": "Text",
+    "value": "RoboticCell.FlexEdge"
+  },
+  "manufacturabilityOnFlexEdge": {
+    "type": "Text",
+    "value": "canProcess"
+  },
+  "priority": {
+    "type": "Integer",
+    "value": 3
+  },
+  "status": {
+    "type": "Text",
+    "value": "loading"
+  }
 }
 
 

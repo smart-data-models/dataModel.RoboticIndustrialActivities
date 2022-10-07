@@ -1,35 +1,38 @@
 {
-    "id": "urn:ngsi-ld:Pallet:0001",
-    "type": "Pallet",
-    "manufacturabilityOnFlexEdge": {
-        "type": "Property",
-        "value": "CanProcess"
-    },
-    "palletID": {
-        "type": "Property",
-        "value": "0001"
-    },
-    "priority": {
-        "type": "Property",
-        "value": 3
-    },
-    "refGoingTo": {
-        "type": "Relationship",
-        "object": "urn:ngsi-ld:RoboticCell:FlexEdge"
-    },
-    "refPalletLocation": {
-        "type": "Relationship",
-        "object": "urn:ngsi-ld:Location:ShopFloor"
-    },
-    "status": {
-        "type": "Property",
-        "value": "loading"
-    },
-    "timeOfLoading": {
-        "type": "Property",
-        "value": {
-            "@type": "Datetime",
-            "@value": "2000-01-01T00:00:00Z"
-        }
+  "id": "urn:ngsi-ld:Pallet:0001",
+  "type": "Pallet",
+  "manufacturabilityOnFlexEdge": {
+    "type": "Property",
+    "value": "CanProcess"
+  },
+  "palletID": {
+    "type": "Property",
+    "value": "0001"
+  },
+  "priority": {
+    "type": "Property",
+    "value": 3
+  },
+  "refGoingTo": {
+    "type": "Relationship",
+    "object": "urn:ngsi-ld:RoboticCell:FlexEdge"
+  },
+  "refPalletLocation": {
+    "type": "Relationship",
+    "object": "urn:ngsi-ld:Location:ShopFloor"
+  },
+  "status": {
+    "type": "Property",
+    "value": "loading"
+  },
+  "timeOfLoading": {
+    "type": "Property",
+    "value": {
+      "@type": "Datetime",
+      "@value": "2000-01-01T00:00:00Z"
     }
+  },
+  "@context": [
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.RoboticIndustrialActivities/master/context.jsonld"
+  ]
 }

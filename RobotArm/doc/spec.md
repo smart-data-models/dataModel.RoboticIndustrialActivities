@@ -1,15 +1,31 @@
-Entity: RobotArm  
-================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entity: RobotArm  
+================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Open License](https://github.com/smart-data-models//dataModel.RoboticIndustrialActivities/blob/master/RobotArm/LICENSE.md)  
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Global description: **A robotic arm for moving stone pieces.**  
+version: 0.0.2  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## List of properties  
 
-- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `axis`: Angle of the different axis on the robot arm.  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `id`: Unique identifier of the entity  - `jobCurrentState`: Current status of the robot job. Enum:'idle, loading, processing, unloading'.  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `robotId`: The robot identifier.  - `robotModel`: The robot manufacturing model.  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `status`: Status of the robot.  - `toolId`: The number of the tool currently attached to the robot, 0 if no tool attached.  - `type`: It has to be RobotArm. NGSI Entity type.    
+<sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
+- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: An alternative name for this item  - `angleAxis1[number]`: Angle of the first axis on the robot arm.  . Model: [https://schema.org/Number](https://schema.org/Number)- `angleAxis2[number]`: Angle of the second axis on the robot arm.  . Model: [https://schema.org/Number](https://schema.org/Number)- `angleAxis3[number]`: Angle of the third axis on the robot arm.  . Model: [https://schema.org/Number](https://schema.org/Number)- `angleAxis4[number]`: Angle of the fourth axis on the robot arm.  . Model: [https://schema.org/Number](https://schema.org/Number)- `angleAxis5[number]`: Angle of the fifth axis on the robot arm.  . Model: [https://schema.org/Number](https://schema.org/Number)- `angleAxis6[number]`: Angle of the sixth axis on the robot arm.  . Model: [https://schema.org/Number](https://schema.org/Number)- `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `baseA[number]`: Actual a value for the definition of the base frame.  . Model: [https://schema.org/Text](https://schema.org/Text)- `baseB[number]`: Actual b value for the definition of the base frame.  . Model: [https://schema.org/Text](https://schema.org/Text)- `baseC[number]`: Actual c value for the definition of the base frame.  . Model: [https://schema.org/Text](https://schema.org/Text)- `baseX[number]`: Actual x value for the definition of the base frame.  . Model: [https://schema.org/Text](https://schema.org/Text)- `baseY[number]`: Actual y value for the definition of the base frame.  . Model: [https://schema.org/Text](https://schema.org/Text)- `baseZ[number]`: Actual z value for the definition of the base frame.  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated[string]`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified[string]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description[string]`: A description of this item  - `drivesOff[boolean]`: Status of signal to turn the Robot Drives to off  . Model: [https://schema.org/Text](https://schema.org/Text)- `drivesOn[boolean]`: Status of the Robot Drives  . Model: [https://schema.org/Text](https://schema.org/Text)- `emergencyStop[boolean]`: Readiness of the emergency circuit of the robot  . Model: [https://schema.org/Text](https://schema.org/Text)- `id`:   - `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `maxTorqueAxis1[number]`: Maximal torque of the first axis of the robot arm.  . Model: [https://schema.org/Number](https://schema.org/Number)- `maxTorqueAxis2[number]`: Maximal torque of the second axis of the robot arm.  . Model: [https://schema.org/Number](https://schema.org/Number)- `maxTorqueAxis3[number]`: Maximal torque of the third axis of the robot arm.  . Model: [https://schema.org/Number](https://schema.org/Number)- `maxTorqueAxis4[number]`: Maximal torque of the fourth axis of the robot arm.  . Model: [https://schema.org/Number](https://schema.org/Number)- `maxTorqueAxis5[number]`: Maximal torque of the fifth axis of the robot arm.  . Model: [https://schema.org/Number](https://schema.org/Number)- `maxTorqueAxis6[number]`: Maximal torque of the sixth axis of the robot arm.  . Model: [https://schema.org/Number](https://schema.org/Number)- `maxVelocityAxis1[number]`: Maximal Velocity of the first axis of the robot arm.  . Model: [https://schema.org/Number](https://schema.org/Number)- `maxVelocityAxis2[number]`: Maximal Velocity of the second axis of the robot arm.  . Model: [https://schema.org/Number](https://schema.org/Number)- `maxVelocityAxis3[number]`: Maximal Velocity of the third axis of the robot arm.  . Model: [https://schema.org/Number](https://schema.org/Number)- `maxVelocityAxis4[number]`: Maximal Velocity of the fourth axis of the robot arm.  . Model: [https://schema.org/Number](https://schema.org/Number)- `maxVelocityAxis5[number]`: Maximal Velocity of the fith axis of the robot arm.  . Model: [https://schema.org/Number](https://schema.org/Number)- `maxVelocityAxis6[number]`: Maximal Velocity of the sixth axis of the robot arm.  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: The name of this item.  - `operatingMode[string]`: State of the turn key switch on top of the robot control panel  . Model: [https://schema.org/Text](https://schema.org/Text)- `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `peripheryReady[boolean]`: Readiness of all peripheral devices around the robot  . Model: [https://schema.org/Text](https://schema.org/Text)- `positionA[number]`: Actual a (rotation around z axis) coordinate of the robot position (with the actual tool and base coordinates)  . Model: [https://schema.org/Text](https://schema.org/Text)- `positionB[number]`: Actual b (rotation around y axis) coordinate of the robot position (with the actual tool and base coordinates)  . Model: [https://schema.org/Text](https://schema.org/Text)- `positionC[number]`: Actual c (rotation around x axis) coordinate of the robot position (with the actual tool and base coordinates)  . Model: [https://schema.org/Text](https://schema.org/Text)- `positionX[number]`: Actual x coordinate of the robot position (with the actual tool and base coordinates)  . Model: [https://schema.org/Text](https://schema.org/Text)- `positionY[number]`: Actual y coordinate of the robot position (with the actual tool and base coordinates)  . Model: [https://schema.org/Text](https://schema.org/Text)- `positionZ[number]`: Actual z coordinate of the robot position (with the actual tool and base coordinates)  . Model: [https://schema.org/Text](https://schema.org/Text)- `proState0[string]`: Status of the Robot PLC  . Model: [https://schema.org/Text](https://schema.org/Text)- `proState1[string]`: Status of the Robot Program Interpreter  . Model: [https://schema.org/Text](https://schema.org/Text)- `seeAlso[*]`: list of uri pointing to additional resources about the item  - `serialNumber[integer]`: The robot identifier, makes it unique in the world.  . Model: [https://schema.org/Text](https://schema.org/Text)- `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `toolA[number]`: Actual a value for the definition of the tool frame.  . Model: [https://schema.org/Text](https://schema.org/Text)- `toolB[number]`: Actual b value for the definition of the tool frame.  . Model: [https://schema.org/Text](https://schema.org/Text)- `toolC[number]`: Actual c value for the definition of the tool frame.  . Model: [https://schema.org/Text](https://schema.org/Text)- `toolX[number]`: Actual x value for the definition of the tool frame.  . Model: [https://schema.org/Text](https://schema.org/Text)- `toolY[number]`: Actual y value for the definition of the tool frame.  . Model: [https://schema.org/Text](https://schema.org/Text)- `toolZ[number]`: Actual z value for the definition of the tool frame.  . Model: [https://schema.org/Text](https://schema.org/Text)- `torqueAxis1[number]`: Actual torque of the first axis of the robot arm.  . Model: [https://schema.org/Number](https://schema.org/Number)- `torqueAxis2[number]`: Actual torque of the second axis of the robot arm.  . Model: [https://schema.org/Number](https://schema.org/Number)- `torqueAxis3[number]`: Actual torque of the third axis of the robot arm.  . Model: [https://schema.org/Number](https://schema.org/Number)- `torqueAxis4[number]`: Actual torque of the fourth axis of the robot arm.  . Model: [https://schema.org/Number](https://schema.org/Number)- `torqueAxis5[number]`: Actual torque of the fifth axis of the robot arm.  . Model: [https://schema.org/Number](https://schema.org/Number)- `torqueAxis6[number]`: Actual torque of the sixth axis of the robot arm.  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: It has to be RobotArm. NGSI Entity type.  - `velocityAxis1[number]`: Actual Velocity of the first axis of the robot arm.  . Model: [https://schema.org/Number](https://schema.org/Number)- `velocityAxis2[number]`: Actual Velocity of the second axis of the robot arm.  . Model: [https://schema.org/Number](https://schema.org/Number)- `velocityAxis3[number]`: Actual Velocity of the third axis of the robot arm.  . Model: [https://schema.org/Number](https://schema.org/Number)- `velocityAxis4[number]`: Actual Velocity of the fourth axis of the robot arm.  . Model: [https://schema.org/Number](https://schema.org/Number)- `velocityAxis5[number]`: Actual Velocity of the fifth axis of the robot arm.  . Model: [https://schema.org/Number](https://schema.org/Number)- `velocityAxis6[number]`: Actual Velocity of the sixth axis of the robot arm.  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Required properties  
-- `id`  - `type`  ## Data Model description of properties  
+- `id`  - `serialNumber`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Data Model description of properties  
 Sorted alphabetically (click for details)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 RobotArm:    
@@ -45,19 +61,83 @@ RobotArm:
       type: string    
       x-ngsi:    
         type: Property    
+    angleAxis1:    
+      description: 'Angle of the first axis on the robot arm.'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    angleAxis2:    
+      description: 'Angle of the second axis on the robot arm.'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    angleAxis3:    
+      description: 'Angle of the third axis on the robot arm.'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    angleAxis4:    
+      description: 'Angle of the fourth axis on the robot arm.'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    angleAxis5:    
+      description: 'Angle of the fifth axis on the robot arm.'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    angleAxis6:    
+      description: 'Angle of the sixth axis on the robot arm.'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
     areaServed:    
       description: 'The geographic area where a service or offered item is provided'    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
-    axis:    
-      description: 'Angle of the different axis on the robot arm.'    
-      items:    
-        type: number    
-      type: array    
+    baseA:    
+      description: 'Actual a value for the definition of the base frame.'    
+      type: number    
       x-ngsi:    
-        model: https://schema.org/Number    
+        model: https://schema.org/Text    
+        type: Property    
+    baseB:    
+      description: 'Actual b value for the definition of the base frame.'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Text    
+        type: Property    
+    baseC:    
+      description: 'Actual c value for the definition of the base frame.'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Text    
+        type: Property    
+    baseX:    
+      description: 'Actual x value for the definition of the base frame.'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Text    
+        type: Property    
+    baseY:    
+      description: 'Actual y value for the definition of the base frame.'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Text    
+        type: Property    
+    baseZ:    
+      description: 'Actual z value for the definition of the base frame.'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Text    
         type: Property    
     dataProvider:    
       description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
@@ -81,30 +161,26 @@ RobotArm:
       type: string    
       x-ngsi:    
         type: Property    
-    id:    
-      anyOf: &robotarm_-_properties_-_owner_-_items_-_anyof    
-        - description: 'Property. Identifier format of any NGSI entity'    
-          maxLength: 256    
-          minLength: 1    
-          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
-          type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
-          format: uri    
-          type: string    
-      description: 'Unique identifier of the entity'    
-      x-ngsi:    
-        type: Property    
-    jobCurrentState:    
-      description: 'Current status of the robot job. Enum:''idle, loading, processing, unloading''.'    
-      enum:    
-        - idle    
-        - loading    
-        - processing    
-        - unloading    
-      type: string    
+    drivesOff:    
+      description: 'Status of signal to turn the Robot Drives to off'    
+      type: boolean    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
+    drivesOn:    
+      description: 'Status of the Robot Drives'    
+      type: boolean    
+      x-ngsi:    
+        model: https://schema.org/Text    
+        type: Property    
+    emergencyStop:    
+      description: 'Readiness of the emergency circuit of the robot'    
+      type: boolean    
+      x-ngsi:    
+        model: https://schema.org/Text    
+        type: Property    
+    id:    
+      type: string    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
@@ -258,27 +334,172 @@ RobotArm:
           type: object    
       x-ngsi:    
         type: Geoproperty    
+    maxTorqueAxis1:    
+      description: 'Maximal torque of the first axis of the robot arm.'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    maxTorqueAxis2:    
+      description: 'Maximal torque of the second axis of the robot arm.'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    maxTorqueAxis3:    
+      description: 'Maximal torque of the third axis of the robot arm.'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    maxTorqueAxis4:    
+      description: 'Maximal torque of the fourth axis of the robot arm.'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    maxTorqueAxis5:    
+      description: 'Maximal torque of the fifth axis of the robot arm.'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    maxTorqueAxis6:    
+      description: 'Maximal torque of the sixth axis of the robot arm.'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    maxVelocityAxis1:    
+      description: 'Maximal Velocity of the first axis of the robot arm.'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    maxVelocityAxis2:    
+      description: 'Maximal Velocity of the second axis of the robot arm.'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    maxVelocityAxis3:    
+      description: 'Maximal Velocity of the third axis of the robot arm.'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    maxVelocityAxis4:    
+      description: 'Maximal Velocity of the fourth axis of the robot arm.'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    maxVelocityAxis5:    
+      description: 'Maximal Velocity of the fith axis of the robot arm.'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    maxVelocityAxis6:    
+      description: 'Maximal Velocity of the sixth axis of the robot arm.'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
     name:    
       description: 'The name of this item.'    
       type: string    
       x-ngsi:    
         type: Property    
-    owner:    
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
-      items:    
-        anyOf: *robotarm_-_properties_-_owner_-_items_-_anyof    
-        description: 'Property. Unique identifier of the entity'    
-      type: array    
-      x-ngsi:    
-        type: Property    
-    robotId:    
-      description: 'The robot identifier.'    
+    operatingMode:    
+      description: 'State of the turn key switch on top of the robot control panel'    
+      enum:    
+        - "#T1"    
+        - "#T2"    
+        - "#AUT"    
+        - "#EXT"    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
-    robotModel:    
-      description: 'The robot manufacturing model.'    
+    owner:    
+      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
+      items:    
+        anyOf:    
+          - description: 'Property. Identifier format of any NGSI entity'    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+          - description: 'Property. Identifier format of any NGSI entity'    
+            format: uri    
+            type: string    
+        description: 'Property. Unique identifier of the entity'    
+      type: array    
+      x-ngsi:    
+        type: Property    
+    peripheryReady:    
+      description: 'Readiness of all peripheral devices around the robot'    
+      type: boolean    
+      x-ngsi:    
+        model: https://schema.org/Text    
+        type: Property    
+    positionA:    
+      description: 'Actual a (rotation around z axis) coordinate of the robot position (with the actual tool and base coordinates)'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Text    
+        type: Property    
+    positionB:    
+      description: 'Actual b (rotation around y axis) coordinate of the robot position (with the actual tool and base coordinates)'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Text    
+        type: Property    
+    positionC:    
+      description: 'Actual c (rotation around x axis) coordinate of the robot position (with the actual tool and base coordinates)'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Text    
+        type: Property    
+    positionX:    
+      description: 'Actual x coordinate of the robot position (with the actual tool and base coordinates)'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Text    
+        type: Property    
+    positionY:    
+      description: 'Actual y coordinate of the robot position (with the actual tool and base coordinates)'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Text    
+        type: Property    
+    positionZ:    
+      description: 'Actual z coordinate of the robot position (with the actual tool and base coordinates)'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Text    
+        type: Property    
+    proState0:    
+      description: 'Status of the Robot PLC'    
+      enum:    
+        - "#P_FREE"    
+        - "#P_ACTIVE"    
+        - "#P_END"    
+        - "#P_RESET"    
+        - "#P_STOP"    
+      type: string    
+      x-ngsi:    
+        model: https://schema.org/Text    
+        type: Property    
+    proState1:    
+      description: 'Status of the Robot Program Interpreter'    
+      enum:    
+        - "#P_FREE"    
+        - "#P_ACTIVE"    
+        - "#P_END"    
+        - "#P_RESET"    
+        - "#P_STOP"    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
@@ -295,22 +516,88 @@ RobotArm:
           type: string    
       x-ngsi:    
         type: Property    
+    serialNumber:    
+      description: 'The robot identifier, makes it unique in the world.'    
+      type: integer    
+      x-ngsi:    
+        model: https://schema.org/Text    
+        type: Property    
     source:    
       description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
       type: string    
       x-ngsi:    
         type: Property    
-    status:    
-      description: 'Status of the robot.'    
-      type: string    
+    toolA:    
+      description: 'Actual a value for the definition of the tool frame.'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Text    
+        type: Property    
+    toolB:    
+      description: 'Actual b value for the definition of the tool frame.'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Text    
+        type: Property    
+    toolC:    
+      description: 'Actual c value for the definition of the tool frame.'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Text    
+        type: Property    
+    toolX:    
+      description: 'Actual x value for the definition of the tool frame.'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Text    
+        type: Property    
+    toolY:    
+      description: 'Actual y value for the definition of the tool frame.'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Text    
+        type: Property    
+    toolZ:    
+      description: 'Actual z value for the definition of the tool frame.'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Text    
+        type: Property    
+    torqueAxis1:    
+      description: 'Actual torque of the first axis of the robot arm.'    
+      type: number    
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
-    toolId:    
-      description: 'The number of the tool currently attached to the robot, 0 if no tool attached.'    
-      type: integer    
+    torqueAxis2:    
+      description: 'Actual torque of the second axis of the robot arm.'    
+      type: number    
       x-ngsi:    
-        model: https://schema.org/Text    
+        model: https://schema.org/Number    
+        type: Property    
+    torqueAxis3:    
+      description: 'Actual torque of the third axis of the robot arm.'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    torqueAxis4:    
+      description: 'Actual torque of the fourth axis of the robot arm.'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    torqueAxis5:    
+      description: 'Actual torque of the fifth axis of the robot arm.'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    torqueAxis6:    
+      description: 'Actual torque of the sixth axis of the robot arm.'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
         type: Property    
     type:    
       description: 'It has to be RobotArm. NGSI Entity type.'    
@@ -319,15 +606,63 @@ RobotArm:
       type: string    
       x-ngsi:    
         type: Property    
+    velocityAxis1:    
+      description: 'Actual Velocity of the first axis of the robot arm.'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    velocityAxis2:    
+      description: 'Actual Velocity of the second axis of the robot arm.'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    velocityAxis3:    
+      description: 'Actual Velocity of the third axis of the robot arm.'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    velocityAxis4:    
+      description: 'Actual Velocity of the fourth axis of the robot arm.'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    velocityAxis5:    
+      description: 'Actual Velocity of the fifth axis of the robot arm.'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
+    velocityAxis6:    
+      description: 'Actual Velocity of the sixth axis of the robot arm.'    
+      type: number    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        type: Property    
   required:    
     - id    
     - type    
+    - serialNumber    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.RoboticIndustrialActivities/blob/master/RobotArm/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModel.RoboticIndustrialActivities/RobotArm/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.2    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Example payloads    
 #### RobotArm NGSI-v2 key-values Example    
 Here is an example of a RobotArm in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Robot:876543",  
@@ -390,8 +725,10 @@ RobotArm:
   "maxVelocityAxis6": 100  
 }  
 ```  
+</details>  
 #### RobotArm NGSI-v2 normalized Example    
 Here is an example of a RobotArm in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Robot:876543",  
@@ -622,70 +959,82 @@ RobotArm:
   }  
 }  
 ```  
+</details>  
 #### RobotArm NGSI-LD key-values Example    
 Here is an example of a RobotArm in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Robot:FlexEdgeRobot",  
-  "type": "RobotArm",  
-  "robotID": "FlexEdgeRobot",  
-  "robotModel": "KR 12345b",  
-  "toolID": 1,  
-  "jobCurrentState": "Processing",  
-  "axis": [  
-    30.0,  
-    14.0,  
-    -55.0,  
-    174.0,  
-    145.0,  
-    -37.0  
-  ],  
-  "status": "#P_ACTIVE",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
+    "id": "urn:ngsi-ld:Robot:FlexEdgeRobot",  
+    "type": "RobotArm",  
+    "axis": [  
+        30.0,  
+        14.0,  
+        -55.0,  
+        174.0,  
+        145.0,  
+        -37.0  
+    ],  
+    "jobCurrentState": "Processing",  
+    "robotID": "FlexEdgeRobot",  
+    "robotModel": "KR 12345b",  
+    "status": "#P_ACTIVE",  
+    "toolID": 1,  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.RoboticIndustrialActivities/master/context.jsonld"  
+    ]  
 }  
 ```  
+</details>  
 #### RobotArm NGSI-LD normalized Example    
 Here is an example of a RobotArm in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Robot:FlexEdgeRobot",  
-  "type": "RobotArm",  
-  "robotID": {  
-    "type": "Property",  
-    "value": "FlexEdgeRobot"  
-  },  
-  "robotModel": {  
-    "type": "Property",  
-    "value": "KR 12345b"  
-  },  
-  "toolID": {  
-    "type": "Property",  
-    "value": 1  
-  },  
-  "jobCurrentState": {  
-    "type": "Property",  
-    "value": "Processing"  
-  },  
-  "axis": {  
-    "type": "Property",  
-    "value": [  
-      30.0,  
-      14.0,  
-      -55.0,  
-      174.0,  
-      145.0,  
-      -37.0  
+    "id": "urn:ngsi-ld:Robot:FlexEdgeRobot",  
+    "type": "RobotArm",  
+    "axis": {  
+        "type": "Property",  
+        "value": [  
+            30.0,  
+            14.0,  
+            -55.0,  
+            174.0,  
+            145.0,  
+            -37.0  
+        ]  
+    },  
+    "jobCurrentState": {  
+        "type": "Property",  
+        "value": "Processing"  
+    },  
+    "robotID": {  
+        "type": "Property",  
+        "value": "FlexEdgeRobot"  
+    },  
+    "robotModel": {  
+        "type": "Property",  
+        "value": "KR 12345b"  
+    },  
+    "status": {  
+        "type": "Property",  
+        "value": "#P_ACTIVE"  
+    },  
+    "toolID": {  
+        "type": "Property",  
+        "value": 1  
+    },  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.RoboticIndustrialActivities/master/context.jsonld"  
     ]  
-  },  
-  "status": {  
-    "type": "Property",  
-    "value": "#P_ACTIVE"  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  

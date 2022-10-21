@@ -1,15 +1,31 @@
-Entity: RoboticCell  
-===================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entity: RoboticCell  
+===================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Open License](https://github.com/smart-data-models//dataModel.RoboticIndustrialActivities/blob/master/RoboticCell/LICENSE.md)  
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Global description: **A Robotic cell.**  
+version: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## List of properties  
 
-- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `currentPieceNumber`:  Current number of pieces done in the job executing on the robotic cell.  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `errorMessage`: The error message corresponding to the error number.  - `errorNumber`: Indicates if there if an error (value not 0) occurred on the cell.  - `id`: Unique identifier of the entity  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `refIncomingPallet`: List of pallets providing incoming pieces for the cell.  - `refOutgoingPallet`: List of pallets providing outcoming pieces for the cell.  - `refRobot`: Robot belonging to the cell.  - `refVacuumPump`: Vacuum pump belonging to the cell.  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `totalNumberOfPieces`: Total number of pieces in the job executing on the robotic cell.  - `type`: It has to be RoboticCell. NGSI Entity type.    
+<sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
+- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `currentPieceNumber[integer]`:  Current number of pieces done in the job executing on the robotic cell.  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated[string]`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified[string]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description[string]`: A description of this item  - `errorMessage[string]`: The error message corresponding to the error number.  . Model: [https://schema.org/Text](https://schema.org/Text)- `errorNumber[integer]`: Indicates if there if an error (value not 0) occurred on the cell.  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: Unique identifier of the entity  - `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `name[string]`: The name of this item.  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `refIncomingPallet[*]`: List of pallets providing incoming pieces for the cell.  . Model: [https://schema.org/Text](https://schema.org/Text)- `refOutgoingPallet[*]`: List of pallets providing outcoming pieces for the cell.  . Model: [https://schema.org/Text](https://schema.org/Text)- `refRobot[*]`: Robot belonging to the cell.  . Model: [https://schema.org/Text](https://schema.org/Text)- `refVacuumPump[*]`: Vacuum pump belonging to the cell.  . Model: [https://schema.org/Text](https://schema.org/Text)- `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `totalNumberOfPieces[integer]`: Total number of pieces in the job executing on the robotic cell.  . Model: [https://schema.org/Text](https://schema.org/Text)- `type[string]`: It has to be RoboticCell. NGSI Entity type.  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Required properties  
-- `id`  - `type`  ## Data Model description of properties  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Data Model description of properties  
 Sorted alphabetically (click for details)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 RoboticCell:    
@@ -360,11 +376,22 @@ RoboticCell:
     - id    
     - type    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.RoboticIndustrialActivities/blob/master/RoboticCell/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModel.RoboticIndustrialActivities/RobotCell/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Example payloads    
 #### RoboticCell NGSI-v2 key-values Example    
 Here is an example of a RoboticCell in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "RoboticCell.FlexEdge",  
@@ -379,8 +406,10 @@ RoboticCell:
   "currentPieceNumber": 4  
 }  
 ```  
+</details>  
 #### RoboticCell NGSI-v2 normalized Example    
 Here is an example of a RoboticCell in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "RoboticCell.FlexEdge",  
@@ -419,66 +448,78 @@ RoboticCell:
   }  
 }  
 ```  
+</details>  
 #### RoboticCell NGSI-LD key-values Example    
 Here is an example of a RoboticCell in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:RoboticCell:FlexEdge",  
-  "type": "RoboticCell",  
-  "refRobot": "urn:ngsi-ld:Robot:FlexEdgeRobot",  
-  "refVacuumPump": "urn:ngsi-ld:VacuumPump:FlexEdgePump",  
-  "refIncomingPallet": "urn:ngsi-ld:Pallet:0003",  
-  "refOutgoingPallet": "urn:ngsi-ld:Pallet:0004",  
-  "errorNumber": 0,  
-  "errorMessage": "",  
-  "totalNumberOfPieces": 12,  
-  "currentPieceNumber": 4,  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
+    "id": "urn:ngsi-ld:RoboticCell:FlexEdge",  
+    "type": "RoboticCell",  
+    "currentPieceNumber": 4,  
+    "errorMessage": "",  
+    "errorNumber": 0,  
+    "refIncomingPallet": "urn:ngsi-ld:Pallet:0003",  
+    "refOutgoingPallet": "urn:ngsi-ld:Pallet:0004",  
+    "refRobot": "urn:ngsi-ld:Robot:FlexEdgeRobot",  
+    "refVacuumPump": "urn:ngsi-ld:VacuumPump:FlexEdgePump",  
+    "totalNumberOfPieces": 12,  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.RoboticIndustrialActivities/master/context.jsonld"  
+    ]  
 }  
 ```  
+</details>  
 #### RoboticCell NGSI-LD normalized Example    
 Here is an example of a RoboticCell in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:RoboticCell:FlexEdge",  
-  "type": "RoboticCell",  
-  "refRobot": {  
-    "type": "Relationship",  
-    "value": "urn:ngsi-ld:Robot:FlexEdgeRobot"  
-  },  
-  "refVacuumPump": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:VacuumPump:FlexEdgePump"  
-  },  
-  "refIncomingPallet": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:Pallet:0003"  
-  },  
-  "refOutgoingPallet": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:Pallet:0004"  
-  },  
-  "errorNumber": {  
-    "type": "Property",  
-    "value": 0  
-  },  
-  "errorMessage": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "totalNumberOfPieces": {  
-    "type": "Property",  
-	"value": 12  
-  },  
-  "currentPieceNumber": {  
-    "type": "Property",  
-	"value": 4  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
+    "id": "urn:ngsi-ld:RoboticCell:FlexEdge",  
+    "type": "RoboticCell",  
+    "currentPieceNumber": {  
+        "type": "Property",  
+        "value": 4  
+    },  
+    "errorMessage": {  
+        "type": "Property",  
+        "value": ""  
+    },  
+    "errorNumber": {  
+        "type": "Property",  
+        "value": 0  
+    },  
+    "refIncomingPallet": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:Pallet:0003"  
+    },  
+    "refOutgoingPallet": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:Pallet:0004"  
+    },  
+    "refRobot": {  
+        "type": "Relationship",  
+        "value": "urn:ngsi-ld:Robot:FlexEdgeRobot"  
+    },  
+    "refVacuumPump": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:VacuumPump:FlexEdgePump"  
+    },  
+    "totalNumberOfPieces": {  
+        "type": "Property",  
+        "value": 12  
+    },  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.RoboticIndustrialActivities/master/context.jsonld"  
+    ]  
 }  
 ```  
-See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  

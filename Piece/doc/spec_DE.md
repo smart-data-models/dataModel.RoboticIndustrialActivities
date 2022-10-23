@@ -1,16 +1,31 @@
-Entität: Stück  
-==============  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entität: Stück  
+==============<!-- /10-Header -->  
+<!-- 15-License -->  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.RoboticIndustrialActivities/blob/master/Piece/LICENSE.md)  
 [Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Globale Beschreibung: **Ein herzustellendes Stück.**  
 Version: 0.0.2  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `manufacturabilityOnFlexEdge`: Gibt an, ob das Stück vom Roboter abgeholt und verarbeitet werden kann. Enum:'canPickUpOnly, cannotPickUp, canProcess'  - `name`: Der Name dieses Artikels.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `pieceID`: Die Identität des Stücks  - `refPieceLocation`: Aktuelle Position eines Teils, auf dem Roboter, auf der Palette usw.  - `seeAlso`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `sequenceNumber`: Gibt die Position des Stücks auf einer Palette an  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `status`: Zeigt den aktuellen Status der Position an  - `timeEstimatedOnFlexEdge`: Geschätzte Anzahl der Sekunden für die Bearbeitung des Stücks  - `type`: Es muss Piece sein. NGSI Entity-Typ.  - `weight`: Gibt das Gewicht des Artikels an    
+<sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, liegt das daran, dass es mehrere Typen oder unterschiedliche Formate/Muster haben kann</sub></sup>.  
+- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated[string]`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified[string]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description[string]`: Eine Beschreibung dieses Artikels  - `id[*]`: Eindeutiger Bezeichner der Entität  - `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `manufacturabilityOnFlexEdge[string]`: Gibt an, ob das Stück vom Roboter abgeholt und verarbeitet werden kann. Enum:'canPickUpOnly, cannotPickUp, canProcess'  - `name[string]`: Der Name dieses Artikels.  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `pieceID[string]`: Die Identität des Stücks  . Model: [https://schema.org/Text](https://schema.org/Text)- `refPieceLocation[*]`: Aktuelle Position eines Teils, auf dem Roboter, auf der Palette usw.  - `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `sequenceNumber[number]`: Gibt die Position des Stücks auf einer Palette an  . Model: [https://schema.org/Number](https://schema.org/Number)- `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `status[string]`: Zeigt den aktuellen Status der Position an  . Model: [https://schema.org/Text](https://schema.org/Text)- `timeEstimatedOnFlexEdge[number]`: Geschätzte Anzahl der Sekunden für die Bearbeitung des Stücks  . Model: [https://schema.org/Text](https://schema.org/Text)- `type[string]`: Es muss Piece sein. NGSI-Entitätstyp.  - `weight[number]`: Gibt das Gewicht des Artikels an  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
-- `id`  - `type`  ## Datenmodell Beschreibung der Eigenschaften  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Piece:    
@@ -337,12 +352,22 @@ Piece:
     - id    
     - type    
   type: object    
-  version: 0.0.2    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.RoboticIndustrialActivities/blob/master/Piece/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModel.RoboticIndustrialActivities/Pallet/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.2    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Beispiel-Nutzlasten  
 #### Stück NGSI-v2-Schlüsselwerte Beispiel  
-Hier ist ein Beispiel für ein Stück im JSON-LD-Format als Schlüsselwerte. Dies ist mit NGSI-v2 kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel für ein Stück im JSON-LD-Format als Schlüsselwerte. Dies ist kompatibel mit NGSI-v2, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "Piece.0001",  
@@ -357,8 +382,10 @@ Piece:
   "status": "created"  
 }   
 ```  
+</details>  
 #### Stück NGSI-v2 normalisiert Beispiel  
 Hier ist ein Beispiel für ein Stück im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Piece:0001",  
@@ -397,66 +424,81 @@ Piece:
   }  
 }   
 ```  
+</details>  
 #### Stück NGSI-LD-Schlüsselwerte Beispiel  
-Hier ist ein Beispiel für ein Stück im JSON-LD-Format als Schlüsselwerte. Dies ist mit NGSI-LD kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel für ein Stück im JSON-LD-Format als Key-Values. Dies ist mit NGSI-LD kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Piece:0001",  
-  "type": "Piece",  
-  "pieceID": "0001",  
-  "dateCreated": "2018-09-27T12:00:00Z",  
-  "manufacturabilityOnFlexEdge": "canPickUpOnly",  
-  "timeEstimatedOnFlexEdge": 600,  
-  "weight": 37,  
-  "sequenceNumber": 1,  
-  "refPieceLocation": "urn:ngsi-ld:Robot:DuoCutRobot",  
-  "status": "created",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
-}   
+    "id": "urn:ngsi-ld:Piece:0001",  
+    "type": "Piece",  
+    "dateCreated": "2018-09-27T12:00:00Z",  
+    "manufacturabilityOnFlexEdge": "canPickUpOnly",  
+    "pieceID": "0001",  
+    "refPieceLocation": "urn:ngsi-ld:Robot:DuoCutRobot",  
+    "sequenceNumber": 1,  
+    "status": "created",  
+    "timeEstimatedOnFlexEdge": 600,  
+    "weight": 37,  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.RoboticIndustrialActivities/master/context.jsonld"  
+    ]  
+}  
 ```  
+</details>  
 #### Stück NGSI-LD normalisiert Beispiel  
 Hier ist ein Beispiel für ein Stück im JSON-LD-Format in normalisierter Form. Dies ist mit NGSI-LD kompatibel, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Piece:0001",  
-  "type": "Piece",  
-  "pieceID": {  
-    "type": "Property",  
-    "value": "0001"  
-  },  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2018-09-27T12:00:00Z"  
-    }  
-  },  
-  "manufacturabilityOnFlexEdge": {  
-    "type": "Property",  
-    "value": "CanPickUpOnly"  
-  },  
-  "timeEstimatedOnFlexEdge": {  
-    "type": "Property",  
-    "value": "600"  
-  },  
-  "weight": {  
-    "type": "Property",  
-    "value": 37  
-  },  
-  "sequenceNumber": {  
-    "type": "Property",  
-    "value": 1  
-  },  
-  "refPieceLocation": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:Robot:DuoCutRobot"  
-  },  
-  "status": {  
-    "type": "Property",  
-    "value": "Created"  
-  }  
-}   
+    "id": "urn:ngsi-ld:Piece:0001",  
+    "type": "Piece",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2018-09-27T12:00:00Z"  
+        }  
+    },  
+    "manufacturabilityOnFlexEdge": {  
+        "type": "Property",  
+        "value": "CanPickUpOnly"  
+    },  
+    "pieceID": {  
+        "type": "Property",  
+        "value": "0001"  
+    },  
+    "refPieceLocation": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:Robot:DuoCutRobot"  
+    },  
+    "sequenceNumber": {  
+        "type": "Property",  
+        "value": 1  
+    },  
+    "status": {  
+        "type": "Property",  
+        "value": "Created"  
+    },  
+    "timeEstimatedOnFlexEdge": {  
+        "type": "Property",  
+        "value": "600"  
+    },  
+    "weight": {  
+        "type": "Property",  
+        "value": 37  
+    },  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.RoboticIndustrialActivities/master/context.jsonld"  
+    ]  
+}  
 ```  
-Siehe [FAQ 10](https://smartdatamodels.org/index.php/faqs/), um eine Antwort auf die Frage zu erhalten, wie man mit Größeneinheiten umgeht
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Siehe [FAQ 10] (https://smartdatamodels.org/index.php/faqs/), um eine Antwort auf die Frage zu erhalten, wie man mit Größeneinheiten umgeht  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  

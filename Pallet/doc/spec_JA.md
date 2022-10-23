@@ -1,15 +1,31 @@
-エンティティパレット  
-==========  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティパレット  
+==========<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.RoboticIndustrialActivities/blob/master/Pallet/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな説明です。**製造用の部品が入ったパレットです。  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述です。**製造のための部分を含んでいるパレット。  
+バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `id`: エンティティのユニークな識別子  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `manufacturabilityOnFlexEdge`: ピースがロボットに拾われて処理されるかどうかを示す。Enum:'CannotPickUp, CanPickUpOnly, CanProcess'.  - `name`: このアイテムの名前です。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `palletId`: パレットの識別番号  - `priority`: パレットの優先順位を示す  - `refGoingTo`: パレットの行き先を示す。  - `refPalletLocation`: パレットの位置を示す  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `status`: パレットの現在の状態（積み込み、積み下ろし、空、充填）。Enum:'空、充填、積み込み、積み下ろし'  - `timeOfLoading`: ピースがパレットに積まれた時のタイムスタンプ。  - `type`: パレットである必要があります。NGSI エンティティタイプです。    
-必須項目  
-- `id`  - `type`  ## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます  
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `id[*]`: エンティティの一意な識別子  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `manufacturabilityOnFlexEdge[string]`: ピースがロボットによってピックアップされ、処理されることが可能かどうかを示す。Enum:'CannotPickUp, CanPickUpOnly, CanProcess'.  . Model: [https://schema.org/Text](https://schema.org/Text)- `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリスト  - `palletId[string]`: パレットの識別子  . Model: [https://schema.org/Text](https://schema.org/Text)- `priority[integer]`: パレットの優先順位を示す  . Model: [https://schema.org/Number](https://schema.org/Number)- `refGoingTo[*]`: パレットの行き先を示す。  - `refPalletLocation[*]`: パレットの位置を示す  . Model: [https://schema.org/Text](https://schema.org/Text)- `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `status[string]`: パレットの現在の状態（積み込み、積み下ろし、空、充填）。Enum:'empty, filled, loading, unloading'.  . Model: [https://schema.org/Text](https://schema.org/Text)- `timeOfLoading[string]`: パレットにピースが積み込まれた時のタイムスタンプ。  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `type[string]`: Pallet である必要があります。NGSIエンティティタイプ。  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Pallet:    
@@ -346,11 +362,22 @@ Pallet:
     - id    
     - type    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.RoboticIndustrialActivities/blob/master/Pallet/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModel.RoboticIndustrialActivities/Pallet/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-#### パレット NGSI-v2 キーバリューの例  
-ここでは、JSON-LD形式でkey-valuesとしてパレットを表現した例を紹介します。これは`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### パレット NGSI-v2 キー値例  
+ここでは、PalletをJSON-LD形式でkey-valuesにした例を示します。これは `options=keyValues` を使用した場合に NGSI-v2 と互換性があり、個々のエンティティのコンテキストデータが返されます。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "Pallet.0001",  
@@ -364,69 +391,95 @@ Pallet:
   "status": "loading"  
 }  
 ```  
+</details>  
 #### パレット NGSI-v2 正規化例  
-ここでは、正規化されたJSON-LD形式のパレットの例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+以下は、正規化されたJSON-LD形式のPalletの例です。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "Pallet.0001",  
+  "id": "Pallet.0001",  
+  "type": "Pallet",  
+  "palletID": {  
+    "type": "Text",  
+    "value": "0001"  
+  },  
+  "timeOfLoading": {  
+    "type": "DateTime",  
+    "value": "2000-01-01T00:00:00Z"  
+  },  
+  "refPalletLocation": {  
+    "type": "Text",  
+    "value": "Location.ShopFloor"  
+  },  
+  "refGoingTo": {  
+    "type": "Text",  
+    "value": "RoboticCell.FlexEdge"  
+  },  
+  "manufacturabilityOnFlexEdge": {  
+    "type": "Text",  
+    "value": "canProcess"  
+  },  
+  "priority": {  
+    "type": "Integer",  
+    "value": 3  
+  },  
+  "status": {  
+    "type": "Text",  
+    "value": "loading"  
+  }  
+}  
+```  
+</details>  
+#### パレット NGSI-LD キー値例  
+ここでは、PalletをJSON-LD形式でkey-valuesにした例を示します。これは `options=keyValues` を使用した場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータが返されます。  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+{  
+    "id": "urn:ngsi-ld:Pallet:0001",  
     "type": "Pallet",  
-    "palletID":{  
-      "type" : "Text",  
-      "value": "0001"  
-    },  
-    "timeOfLoading": {  
-      "type" : "DateTime",  
-      "value": "2000-01-01T00:00:00Z"  
-    },  
-    "refPalletLocation":{  
-      "type" : "Text",  
-      "value": "Location.ShopFloor"  
-    },  
-    "refGoingTo":{  
-      "type" : "Text",  
-      "value": "RoboticCell.FlexEdge"  
-    },  
-    "manufacturabilityOnFlexEdge":{  
-      "type" : "Text",  
-      "value": "canProcess"  
-    },   
-    "priority": {  
-        "type": "Integer",  
-        "value": 3  
-    },   
-    "status": {  
-        "type": "Text",  
-        "value": "loading"  
-    }  
+    "manufacturabilityOnFlexEdge": "canProcess",  
+    "palletID": "0001",  
+    "priority": 3,  
+    "refGoingTo": "urn:ngsi-ld:RoboticCell:FlexEdge",  
+    "refPalletLocation": "urn:ngsi-ld:Location:ShopFloor",  
+    "status": "loading",  
+    "timeOfLoading": "2000-01-01T00:00:00Z",  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.RoboticIndustrialActivities/master/context.jsonld"  
+    ]  
 }  
 ```  
-#### パレット NGSI-LD のキーバリューの例  
-ここでは、JSON-LD形式でkey-valuesとしてパレットの例を示しています。これは`options=keyValues`を使った場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### パレット NGSI-LD 正規化例  
+ここでは、PalletをJSON-LD形式で正規化した例を示します。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Pallet:0001",  
   "type": "Pallet",  
-  "palletID": "0001",  
-  "timeOfLoading": "2000-01-01T00:00:00Z",  
-  "refPalletLocation": "urn:ngsi-ld:Location:ShopFloor",  
-  "refGoingTo": "urn:ngsi-ld:RoboticCell:FlexEdge",  
-  "manufacturabilityOnFlexEdge": "canProcess",  
-  "priority": 3,  
-  "status": "loading",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
-}  
-```  
-#### パレット NGSI-LDの正規化例  
-ここでは、正規化されたJSON-LD形式のパレットの例を示します。これは、オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
-```json  
-{  
-  "id": "urn:ngsi-ld:Pallet:0001",  
-  "type": "Pallet",  
+  "manufacturabilityOnFlexEdge": {  
+    "type": "Property",  
+    "value": "CanProcess"  
+  },  
   "palletID": {  
     "type": "Property",  
     "value": "0001"  
+  },  
+  "priority": {  
+    "type": "Property",  
+    "value": 3  
+  },  
+  "refGoingTo": {  
+    "type": "Relationship",  
+    "object": "urn:ngsi-ld:RoboticCell:FlexEdge"  
+  },  
+  "refPalletLocation": {  
+    "type": "Relationship",  
+    "object": "urn:ngsi-ld:Location:ShopFloor"  
+  },  
+  "status": {  
+    "type": "Property",  
+    "value": "loading"  
   },  
   "timeOfLoading": {  
     "type": "Property",  
@@ -435,26 +488,17 @@ Pallet:
       "@value": "2000-01-01T00:00:00Z"  
     }  
   },  
-  "refPalletLocation": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:Location:ShopFloor"  
-  },  
-  "refGoingTo": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:RoboticCell:FlexEdge"  
-  },  
-  "manufacturabilityOnFlexEdge": {  
-    "type": "Property",  
-    "value": "CanProcess"  
-  },  
-  "priority": {  
-    "type": "Property",  
-    "value": 3  
-  },  
-  "status": {  
-    "type": "Property",  
-    "value": "loading"  
-  }  
+  "@context": [  
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.RoboticIndustrialActivities/master/context.jsonld"  
+  ]  
 }  
 ```  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  

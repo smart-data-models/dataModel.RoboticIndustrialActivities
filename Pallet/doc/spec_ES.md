@@ -1,15 +1,31 @@
-Entidad: Pallet  
-===============  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entidad: Pallet  
+===============<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licencia abierta](https://github.com/smart-data-models//dataModel.RoboticIndustrialActivities/blob/master/Pallet/LICENSE.md)  
 [documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Descripción global: **Un palé que contiene piezas para la fabricación.**  
+versión: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `manufacturabilityOnFlexEdge`: Indica si la pieza puede ser recogida por el robot y ser procesada. Enum:'CannotPickUp, CanPickUpOnly, CanProcess'  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `palletId`: Identificador de la paleta  - `priority`: Indica la prioridad de la paleta  - `refGoingTo`: Indica a dónde va la paleta.  - `refPalletLocation`: Indica la ubicación de la paleta  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `status`: Estado actual (carga, descarga, vacío, lleno) de la paleta. Enum:'vacío, lleno, carga, descarga'  - `timeOfLoading`: Marca de tiempo de cuando las piezas fueron cargadas en la paleta.  - `type`: Tiene que ser Pallet. Tipo de entidad NGSI.    
+<sup><sub>[*] Si no hay un tipo en un atributo es porque puede tener varios tipos o diferentes formatos/patrones</sub></sup>  
+- `address[object]`: La dirección postal  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated[string]`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified[string]`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description[string]`: Una descripción de este artículo  - `id[*]`: Identificador único de la entidad  - `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `manufacturabilityOnFlexEdge[string]`: Indica si la pieza puede ser recogida por el robot y ser procesada. Enum:'CannotPickUp, CanPickUpOnly, CanProcess'  . Model: [https://schema.org/Text](https://schema.org/Text)- `name[string]`: El nombre de este artículo.  - `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `palletId[string]`: Identificador de la paleta  . Model: [https://schema.org/Text](https://schema.org/Text)- `priority[integer]`: Indica la prioridad de la paleta  . Model: [https://schema.org/Number](https://schema.org/Number)- `refGoingTo[*]`: Indica a dónde va la paleta.  - `refPalletLocation[*]`: Indica la ubicación de la paleta  . Model: [https://schema.org/Text](https://schema.org/Text)- `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source[string]`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `status[string]`: Estado actual (carga, descarga, vacío, lleno) de la paleta. Enum:'vacío, lleno, carga, descarga'  . Model: [https://schema.org/Text](https://schema.org/Text)- `timeOfLoading[string]`: Marca de tiempo de cuando las piezas fueron cargadas en el palet.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `type[string]`: Tiene que ser Pallet. Tipo de entidad NGSI.  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Propiedades requeridas  
-- `id`  - `type`  ## Descripción del modelo de datos de las propiedades  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Descripción del modelo de datos de las propiedades  
 Ordenados alfabéticamente (haga clic para ver los detalles)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Pallet:    
@@ -346,11 +362,22 @@ Pallet:
     - id    
     - type    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.RoboticIndustrialActivities/blob/master/Pallet/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModel.RoboticIndustrialActivities/Pallet/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Ejemplo de carga útil  
 #### Pallet NGSI-v2 key-values Ejemplo  
 Aquí hay un ejemplo de una paleta en formato JSON-LD como valores-clave. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "Pallet.0001",  
@@ -364,69 +391,95 @@ Pallet:
   "status": "loading"  
 }  
 ```  
+</details>  
 #### Paleta NGSI-v2 normalizada Ejemplo  
 Aquí hay un ejemplo de una paleta en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "Pallet.0001",  
-    "type": "Pallet",  
-    "palletID":{  
-      "type" : "Text",  
-      "value": "0001"  
-    },  
-    "timeOfLoading": {  
-      "type" : "DateTime",  
-      "value": "2000-01-01T00:00:00Z"  
-    },  
-    "refPalletLocation":{  
-      "type" : "Text",  
-      "value": "Location.ShopFloor"  
-    },  
-    "refGoingTo":{  
-      "type" : "Text",  
-      "value": "RoboticCell.FlexEdge"  
-    },  
-    "manufacturabilityOnFlexEdge":{  
-      "type" : "Text",  
-      "value": "canProcess"  
-    },   
-    "priority": {  
-        "type": "Integer",  
-        "value": 3  
-    },   
-    "status": {  
-        "type": "Text",  
-        "value": "loading"  
-    }  
+  "id": "Pallet.0001",  
+  "type": "Pallet",  
+  "palletID": {  
+    "type": "Text",  
+    "value": "0001"  
+  },  
+  "timeOfLoading": {  
+    "type": "DateTime",  
+    "value": "2000-01-01T00:00:00Z"  
+  },  
+  "refPalletLocation": {  
+    "type": "Text",  
+    "value": "Location.ShopFloor"  
+  },  
+  "refGoingTo": {  
+    "type": "Text",  
+    "value": "RoboticCell.FlexEdge"  
+  },  
+  "manufacturabilityOnFlexEdge": {  
+    "type": "Text",  
+    "value": "canProcess"  
+  },  
+  "priority": {  
+    "type": "Integer",  
+    "value": 3  
+  },  
+  "status": {  
+    "type": "Text",  
+    "value": "loading"  
+  }  
 }  
 ```  
-#### Paleta de valores clave NGSI-LD Ejemplo  
+</details>  
+#### Pallet NGSI-LD key-values Ejemplo  
 Aquí hay un ejemplo de una paleta en formato JSON-LD como valores-clave. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Pallet:0001",  
-  "type": "Pallet",  
-  "palletID": "0001",  
-  "timeOfLoading": "2000-01-01T00:00:00Z",  
-  "refPalletLocation": "urn:ngsi-ld:Location:ShopFloor",  
-  "refGoingTo": "urn:ngsi-ld:RoboticCell:FlexEdge",  
-  "manufacturabilityOnFlexEdge": "canProcess",  
-  "priority": 3,  
-  "status": "loading",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
+    "id": "urn:ngsi-ld:Pallet:0001",  
+    "type": "Pallet",  
+    "manufacturabilityOnFlexEdge": "canProcess",  
+    "palletID": "0001",  
+    "priority": 3,  
+    "refGoingTo": "urn:ngsi-ld:RoboticCell:FlexEdge",  
+    "refPalletLocation": "urn:ngsi-ld:Location:ShopFloor",  
+    "status": "loading",  
+    "timeOfLoading": "2000-01-01T00:00:00Z",  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.RoboticIndustrialActivities/master/context.jsonld"  
+    ]  
 }  
 ```  
+</details>  
 #### Paleta NGSI-LD normalizada Ejemplo  
-Aquí hay un ejemplo de una paleta en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+Este es un ejemplo de una paleta en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Pallet:0001",  
   "type": "Pallet",  
+  "manufacturabilityOnFlexEdge": {  
+    "type": "Property",  
+    "value": "CanProcess"  
+  },  
   "palletID": {  
     "type": "Property",  
     "value": "0001"  
+  },  
+  "priority": {  
+    "type": "Property",  
+    "value": 3  
+  },  
+  "refGoingTo": {  
+    "type": "Relationship",  
+    "object": "urn:ngsi-ld:RoboticCell:FlexEdge"  
+  },  
+  "refPalletLocation": {  
+    "type": "Relationship",  
+    "object": "urn:ngsi-ld:Location:ShopFloor"  
+  },  
+  "status": {  
+    "type": "Property",  
+    "value": "loading"  
   },  
   "timeOfLoading": {  
     "type": "Property",  
@@ -435,26 +488,17 @@ Pallet:
       "@value": "2000-01-01T00:00:00Z"  
     }  
   },  
-  "refPalletLocation": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:Location:ShopFloor"  
-  },  
-  "refGoingTo": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:RoboticCell:FlexEdge"  
-  },  
-  "manufacturabilityOnFlexEdge": {  
-    "type": "Property",  
-    "value": "CanProcess"  
-  },  
-  "priority": {  
-    "type": "Property",  
-    "value": 3  
-  },  
-  "status": {  
-    "type": "Property",  
-    "value": "loading"  
-  }  
+  "@context": [  
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.RoboticIndustrialActivities/master/context.jsonld"  
+  ]  
 }  
 ```  
-Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  

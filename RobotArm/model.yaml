@@ -156,7 +156,18 @@ RobotArm:
         model: https://schema.org/Text
         type: Property
     id:
-      type: string
+      anyOf: &robotarm_-_properties_-_owner_-_items_-_anyof
+        - description: Property. Identifier format of any NGSI entity
+          maxLength: 256
+          minLength: 1
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
+          type: string
+        - description: Property. Identifier format of any NGSI entity
+          format: uri
+          type: string
+      description: Unique identifier of the entity
+      x-ngsi:
+        type: Property
     location:
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'
       oneOf:
@@ -401,15 +412,7 @@ RobotArm:
     owner:
       description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)
       items:
-        anyOf:
-          - description: Property. Identifier format of any NGSI entity
-            maxLength: 256
-            minLength: 1
-            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
-            type: string
-          - description: Property. Identifier format of any NGSI entity
-            format: uri
-            type: string
+        anyOf: *robotarm_-_properties_-_owner_-_items_-_anyof
         description: Property. Unique identifier of the entity
       type: array
       x-ngsi:

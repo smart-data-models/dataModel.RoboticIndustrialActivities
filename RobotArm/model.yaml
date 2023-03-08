@@ -631,4 +631,4 @@ RobotArm:
   x-license-url: https://github.com/smart-data-models/dataModel.RoboticIndustrialActivities/blob/master/RobotArm/LICENSE.md
   x-model-schema: https://smart-data-models.github.io/dataModel.RoboticIndustrialActivities/RobotArm/schema.json
   x-model-tags: ""
-  x-version: 0.0.2
+  x-version: 0.0.3

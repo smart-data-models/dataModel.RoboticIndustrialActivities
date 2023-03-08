@@ -1,97 +1,97 @@
 {
-    "$schema": "http://json-schema.org/schema#",
-    "$schemaVersion": "0.0.1",
-    "modelTags": "",
-    "$id": "https://smart-data-models.github.io/dataModel.RoboticIndustrialActivities/Pallet/schema.json",
-    "title": " Smart Data Models- Pallet schema",
-    "description": "A pallet containing pieces for manufacturing.",
-    "type": "object",
-    "allOf": [
-        {
-            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+  "$schema": "http://json-schema.org/schema#",
+  "$schemaVersion": "0.0.1",
+  "modelTags": "",
+  "$id": "https://smart-data-models.github.io/dataModel.RoboticIndustrialActivities/Pallet/schema.json",
+  "title": " Smart Data Models- Pallet schema",
+  "description": "A pallet containing pieces for manufacturing.",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+    },
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "Pallet"
+          ],
+          "description": "Property. It has to be Pallet. NGSI Entity type."
         },
-        {
-            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        "palletId": {
+          "type": "string",
+          "description": "Property. Identifier of the pallet. Model:'https://schema.org/Text'"
         },
-        {
-            "properties": {
-                "type": {
-                    "type": "string",
-                    "enum": [
-                        "Pallet"
-                    ],
-                    "description": "Property. It has to be Pallet. NGSI Entity type."
-                },
-                "palletId": {
-                    "type": "string",
-                    "description": "Property. Identifier of the pallet. Model:'https://schema.org/Text'"
-                },
-                "timeOfLoading": {
-                    "type": "string",
-                    "description": "Property. Timestamp of when the pieces were loaded onto the pallet.. Model:'https://schema.org/DateTime'"
-                },
-                "refPalletLocation": {
-                    "anyOf": [
-                        {
-                            "type": "string",
-                            "minLength": 1,
-                            "maxLength": 256,
-                            "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
-                            "description": "Property. Identifier format of any NGSI entity"
-                        },
-                        {
-                            "type": "string",
-                            "format": "uri",
-                            "description": "Property. Identifier format of any NGSI entity"
-                        }
-                    ],
-                    "description": "Relationship. Indicates the location of the pallet. Model:'https://schema.org/Text'"
-                },
-                "refGoingTo": {
-                    "anyOf": [
-                        {
-                            "type": "string",
-                            "minLength": 1,
-                            "maxLength": 256,
-                            "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
-                            "description": "Property. Identifier format of any NGSI entity"
-                        },
-                        {
-                            "type": "string",
-                            "format": "uri",
-                            "description": "Property. Identifier format of any NGSI entity"
-                        }
-                    ],
-                    "description": "Relationship. Indicates where the pallet is going to."
-                },
-                "manufacturabilityOnFlexEdge": {
-                    "type": "string",
-                    "enum": [
-                        "cannotPickUp",
-                        "canPickUpOnly",
-                        "canProcess"
-                    ],
-                    "description": "Property. Indicates if the Piece can be picked up by robot and be processed. Model:'https://schema.org/Text'. Enum:'CannotPickUp, CanPickUpOnly, CanProcess'"
-                },
-                "priority": {
-                    "type": "integer",
-                    "description": "Property. Indicates the priority of the pallet. Model:'https://schema.org/Number'"
-                },
-                "status": {
-                    "type": "string",
-                    "description": "Property. Current status (loading, unloading, empty, filled) of the pallet. Model:'https://schema.org/Text'. Enum:'empty, filled, loading, unloading'",
-                    "enum": [
-                        "empty",
-                        "filled",
-                        "loading",
-                        "unloading"
-                    ]
-                }
+        "timeOfLoading": {
+          "type": "string",
+          "description": "Property. Timestamp of when the pieces were loaded onto the pallet.. Model:'https://schema.org/DateTime'"
+        },
+        "refPalletLocation": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 256,
+              "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
+              "description": "Property. Identifier format of any NGSI entity"
+            },
+            {
+              "type": "string",
+              "format": "uri",
+              "description": "Property. Identifier format of any NGSI entity"
             }
+          ],
+          "description": "Relationship. Indicates the location of the pallet. Model:'https://schema.org/Text'"
+        },
+        "refGoingTo": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 256,
+              "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
+              "description": "Property. Identifier format of any NGSI entity"
+            },
+            {
+              "type": "string",
+              "format": "uri",
+              "description": "Property. Identifier format of any NGSI entity"
+            }
+          ],
+          "description": "Relationship. Indicates where the pallet is going to."
+        },
+        "manufacturabilityOnFlexEdge": {
+          "type": "string",
+          "enum": [
+            "cannotPickUp",
+            "canPickUpOnly",
+            "canProcess"
+          ],
+          "description": "Property. Indicates if the Piece can be picked up by robot and be processed. Model:'https://schema.org/Text'. Enum:'CannotPickUp, CanPickUpOnly, CanProcess'"
+        },
+        "priority": {
+          "type": "integer",
+          "description": "Property. Indicates the priority of the pallet. Model:'https://schema.org/Number'"
+        },
+        "status": {
+          "type": "string",
+          "description": "Property. Current status (loading, unloading, empty, filled) of the pallet. Model:'https://schema.org/Text'. Enum:'empty, filled, loading, unloading'",
+          "enum": [
+            "empty",
+            "filled",
+            "loading",
+            "unloading"
+          ]
         }
-    ],
-    "required": [
-        "id",
-        "type"
-    ]
+      }
+    }
+  ],
+  "required": [
+    "id",
+    "type"
+  ]
 }

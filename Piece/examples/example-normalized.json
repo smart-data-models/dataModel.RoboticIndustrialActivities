@@ -15,15 +15,11 @@
   },
   "timeEstimatedOnFlexEdge": {
     "type" : "Number",
-    "value": "600"
+    "value": 600
   },
   "weight": {
     "type" : "Number",
     "value": 37
-  },
-  "weight": {
-    "type" : "sequenceNumber",
-    "value": 1
   },
   "refpieceLocation": {
     "type" : "Text",

@@ -1,277 +1,277 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0.3",
-  "modelTags": "",
-  "$id": "https://smart-data-models.github.io/dataModel.RoboticIndustrialActivities/RobotArm/schema.json",
-  "title": " Smart Data Models- Industrial robot arm schema",
-  "description": "A robotic arm for moving stone pieces.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    {
-      "properties": {
-        "type": {
-          "type": "string",
-          "enum": [
-            "RobotArm"
-          ],
-          "description": "Property. It has to be RobotArm. NGSI Entity type."
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.3",
+    "modelTags": "",
+    "$id": "https://smart-data-models.github.io/dataModel.RoboticIndustrialActivities/RobotArm/schema.json",
+    "title": " Smart Data Models- Industrial robot arm schema",
+    "description": "A robotic arm for moving stone pieces.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
         },
-        "serialNumber": {
-          "type": "integer",
-          "description": "Property. Model:'https://schema.org/Text'. The robot identifier, makes it unique in the world."
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
         },
-        "proState0": {
-          "type": "string",
-          "enum": [
-            "#P_FREE",
-            "#P_ACTIVE",
-            "#P_END",
-            "#P_RESET",
-            "#P_STOP"
-          ],
-          "description": "Property. Model:'https://schema.org/Text'. Status of the Robot PLC"
-        },
-        "proState1": {
-          "type": "string",
-          "enum": [
-            "#P_FREE",
-            "#P_ACTIVE",
-            "#P_END",
-            "#P_RESET",
-            "#P_STOP"
-          ],
-          "description": "Property. Model:'https://schema.org/Text'. Status of the Robot Program Interpreter"
-        },
-        "drivesOn": {
-          "type": "boolean",
-          "description": "Property. Model:'https://schema.org/Text'. Status of the Robot Drives"
-        },
-        "drivesOff": {
-          "type": "boolean",
-          "description": "Property. Model:'https://schema.org/Text'. Status of signal to turn the Robot Drives to off"
-        },
-        "peripheryReady": {
-          "type": "boolean",
-          "description": "Property. Model:'https://schema.org/Text'. Readiness of all peripheral devices around the robot"
-        },
-        "emergencyStop": {
-          "type": "boolean",
-          "description": "Property. Model:'https://schema.org/Text'. Readiness of the emergency circuit of the robot"
-        },
-        "operatingMode": {
-          "type": "string",
-          "enum": [
-            "#T1",
-            "#T2",
-            "#AUT",
-            "#EXT"
-          ],
-          "description": "Property. Model:'https://schema.org/Text'. State of the turn key switch on top of the robot control panel"
-        },
-        "positionX": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Text'. Actual x coordinate of the robot position (with the actual tool and base coordinates)"
-        },
-        "positionY": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Text'. Actual y coordinate of the robot position (with the actual tool and base coordinates)"
-        },
-        "positionZ": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Text'. Actual z coordinate of the robot position (with the actual tool and base coordinates)"
-        },
-        "positionA": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Text'. Actual a (rotation around z axis) coordinate of the robot position (with the actual tool and base coordinates)"
-        },
-        "positionB": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Text'. Actual b (rotation around y axis) coordinate of the robot position (with the actual tool and base coordinates)"
-        },
-        "positionC": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Text'. Actual c (rotation around x axis) coordinate of the robot position (with the actual tool and base coordinates)"
-        },
-        "toolX": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Text'. Actual x value for the definition of the tool frame."
-        },
-        "toolY": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Text'. Actual y value for the definition of the tool frame."
-        },
-        "toolZ": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Text'. Actual z value for the definition of the tool frame."
-        },
-        "toolA": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Text'. Actual a value for the definition of the tool frame."
-        },
-        "toolB": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Text'. Actual b value for the definition of the tool frame."
-        },
-        "toolC": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Text'. Actual c value for the definition of the tool frame."
-        },
-        "baseX": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Text'. Actual x value for the definition of the base frame."
-        },
-        "baseY": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Text'. Actual y value for the definition of the base frame."
-        },
-        "baseZ": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Text'. Actual z value for the definition of the base frame."
-        },
-        "baseA": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Text'. Actual a value for the definition of the base frame."
-        },
-        "baseB": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Text'. Actual b value for the definition of the base frame."
-        },
-        "baseC": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Text'. Actual c value for the definition of the base frame."
-        },
-        "angleAxis1": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Angle of the first axis on the robot arm."
-        },
-        "angleAxis2": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Angle of the second axis on the robot arm."
-        },
-        "angleAxis3": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Angle of the third axis on the robot arm."
-        },
-        "angleAxis4": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Angle of the fourth axis on the robot arm."
-        },
-        "angleAxis5": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Angle of the fifth axis on the robot arm."
-        },
-        "angleAxis6": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Angle of the sixth axis on the robot arm."
-        },
-        "torqueAxis1": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Actual torque of the first axis of the robot arm."
-        },
-        "torqueAxis2": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Actual torque of the second axis of the robot arm."
-        },
-        "torqueAxis3": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Actual torque of the third axis of the robot arm."
-        },
-        "torqueAxis4": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Actual torque of the fourth axis of the robot arm."
-        },
-        "torqueAxis5": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Actual torque of the fifth axis of the robot arm."
-        },
-        "torqueAxis6": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Actual torque of the sixth axis of the robot arm."
-        },
-        "maxTorqueAxis1": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Maximal torque of the first axis of the robot arm."
-        },
-        "maxTorqueAxis2": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Maximal torque of the second axis of the robot arm."
-        },
-        "maxTorqueAxis3": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Maximal torque of the third axis of the robot arm."
-        },
-        "maxTorqueAxis4": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Maximal torque of the fourth axis of the robot arm."
-        },
-        "maxTorqueAxis5": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Maximal torque of the fifth axis of the robot arm."
-        },
-        "maxTorqueAxis6": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Maximal torque of the sixth axis of the robot arm."
-        },
-        "velocityAxis1": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Actual Velocity of the first axis of the robot arm."
-        },
-        "velocityAxis2": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Actual Velocity of the second axis of the robot arm."
-        },
-        "velocityAxis3": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Actual Velocity of the third axis of the robot arm."
-        },
-        "velocityAxis4": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Actual Velocity of the fourth axis of the robot arm."
-        },
-        "velocityAxis5": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Actual Velocity of the fifth axis of the robot arm."
-        },
-        "velocityAxis6": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Actual Velocity of the sixth axis of the robot arm."
-        },
-        "maxVelocityAxis1": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Maximal Velocity of the first axis of the robot arm."
-        },
-        "maxVelocityAxis2": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Maximal Velocity of the second axis of the robot arm."
-        },
-        "maxVelocityAxis3": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Maximal Velocity of the third axis of the robot arm."
-        },
-        "maxVelocityAxis4": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Maximal Velocity of the fourth axis of the robot arm."
-        },
-        "maxVelocityAxis5": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Maximal Velocity of the fith axis of the robot arm."
-        },
-        "maxVelocityAxis6": {
-          "type": "number",
-          "description": "Property. Model:'https://schema.org/Number'. Maximal Velocity of the sixth axis of the robot arm."
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "RobotArm"
+                    ],
+                    "description": "Property. It has to be RobotArm. NGSI Entity type"
+                },
+                "serialNumber": {
+                    "type": "integer",
+                    "description": "Property. Model:'https://schema.org/Text'. The robot identifier, makes it unique in the world"
+                },
+                "proState0": {
+                    "type": "string",
+                    "enum": [
+                        "#P_FREE",
+                        "#P_ACTIVE",
+                        "#P_END",
+                        "#P_RESET",
+                        "#P_STOP"
+                    ],
+                    "description": "Property. Model:'https://schema.org/Text'. Status of the Robot PLC"
+                },
+                "proState1": {
+                    "type": "string",
+                    "enum": [
+                        "#P_FREE",
+                        "#P_ACTIVE",
+                        "#P_END",
+                        "#P_RESET",
+                        "#P_STOP"
+                    ],
+                    "description": "Property. Model:'https://schema.org/Text'. Status of the Robot Program Interpreter"
+                },
+                "drivesOn": {
+                    "type": "boolean",
+                    "description": "Property. Model:'https://schema.org/Text'. Status of the Robot Drives"
+                },
+                "drivesOff": {
+                    "type": "boolean",
+                    "description": "Property. Model:'https://schema.org/Text'. Status of signal to turn the Robot Drives to off"
+                },
+                "peripheryReady": {
+                    "type": "boolean",
+                    "description": "Property. Model:'https://schema.org/Text'. Readiness of all peripheral devices around the robot"
+                },
+                "emergencyStop": {
+                    "type": "boolean",
+                    "description": "Property. Model:'https://schema.org/Text'. Readiness of the emergency circuit of the robot"
+                },
+                "operatingMode": {
+                    "type": "string",
+                    "enum": [
+                        "#T1",
+                        "#T2",
+                        "#AUT",
+                        "#EXT"
+                    ],
+                    "description": "Property. Model:'https://schema.org/Text'. State of the turn key switch on top of the robot control panel"
+                },
+                "positionX": {
+                    "type": "number",
+                    "description": "Property. Model:'https://schema.org/Text'. Actual x coordinate of the robot position (with the actual tool and base coordinates)"
+                },
+                "positionY": {
+                    "type": "number",
+                    "description": "Property. Model:'https://schema.org/Text'. Actual y coordinate of the robot position (with the actual tool and base coordinates)"
+                },
+                "positionZ": {
+                    "type": "number",
+                    "description": "Property. Model:'https://schema.org/Text'. Actual z coordinate of the robot position (with the actual tool and base coordinates)"
+                },
+                "positionA": {
+                    "type": "number",
+                    "description": "Property. Model:'https://schema.org/Text'. Actual a (rotation around z axis) coordinate of the robot position (with the actual tool and base coordinates)"
+                },
+                "positionB": {
+                    "type": "number",
+                    "description": "Property. Model:'https://schema.org/Text'. Actual b (rotation around y axis) coordinate of the robot position (with the actual tool and base coordinates)"
+                },
+                "positionC": {
+                    "type": "number",
+                    "description": "Property. Model:'https://schema.org/Text'. Actual c (rotation around x axis) coordinate of the robot position (with the actual tool and base coordinates)"
+                },
+                "toolX": {
+                    "type": "number",
+                    "description": "Property. Model:'https://schema.org/Text'. Actual x value for the definition of the tool frame"
+                },
+                "toolY": {
+                    "type": "number",
+                    "description": "Property. Model:'https://schema.org/Text'. Actual y value for the definition of the tool frame"
+                },
+                "toolZ": {
+                    "type": "number",
+                    "description": "Property. Model:'https://schema.org/Text'. Actual z value for the definition of the tool frame"
+                },
+                "toolA": {
+                    "type": "number",
+                    "description": "Property. Model:'https://schema.org/Text'. Actual a value for the definition of the tool frame"
+                },
+                "toolB": {
+                    "type": "number",
+                    "description": "Property. Model:'https://schema.org/Text'. Actual b value for the definition of the tool frame"
+                },
+                "toolC": {
+                    "type": "number",
+                    "description": "Property. Model:'https://schema.org/Text'. Actual c value for the definition of the tool frame"
+                },
+                "baseX": {
+                    "type": "number",
+                    "description": "Property. Model:'https://schema.org/Text'. Actual x value for the definition of the base frame"
+                },
+                "baseY": {
+                    "type": "number",
+                    "description": "Property. Model:'https://schema.org/Text'. Actual y value for the definition of the base frame"
+                },
+                "baseZ": {
+                    "type": "number",
+                    "description": "Property. Model:'https://schema.org/Text'. Actual z value for the definition of the base frame"
+                },
+                "baseA": {
+                    "type": "number",
+                    "description": "Property. Model:'https://schema.org/Text'. Actual a value for the definition of the base frame"
+                },
+                "baseB": {
+                    "type": "number",
+                    "description": "Property. Model:'https://schema.org/Text'. Actual b value for the definition of the base frame"
+                },
+                "baseC": {
+                    "type": "number",
+                    "description": "Property. Model:'https://schema.org/Text'. Actual c value for the definition of the base frame"
+                },
+                "angleAxis1": {
+                    "type": "number",
+                    "description": "Property. Model:'https://schema.org/Number'. Angle of the first axis on the robot arm"
+                },
+                "angleAxis2": {
+                    "type": "number",
+                    "description": "Property. Model:'https://schema.org/Number'. Angle of the second axis on the robot arm"
+                },
+                "angleAxis3": {
+                    "type": "number",
+                    "description": "Property. Model:'https://schema.org/Number'. Angle of the third axis on the robot arm"
+                },
+                "angleAxis4": {
+                    "type": "number",
+                    "description": "Property. Model:'https://schema.org/Number'. Angle of the fourth axis on the robot arm"
+                },
+                "angleAxis5": {
+                    "type": "number",
+                    "description": "Property. Model:'https://schema.org/Number'. Angle of the fifth axis on the robot arm"
+                },
+                "angleAxis6": {
+                    "type": "number",
+                    "description": "Property. Model:'https://schema.org/Number'. Angle of the sixth axis on the robot arm"
+                },
+                "torqueAxis1": {
+                    "type": "number",
+                    "description": "Property. Model:'https://schema.org/Number'. Actual torque of the first axis of the robot arm"
+                },
+                "torqueAxis2": {
+                    "type": "number",
+                    "description": "Property. Model:'https://schema.org/Number'. Actual torque of the second axis of the robot arm"
+                },
+                "torqueAxis3": {
+                    "type": "number",
+                    "description": "Property. Model:'https://schema.org/Number'. Actual torque of the third axis of the robot arm"
+                },
+                "torqueAxis4": {
+                    "type": "number",
+                    "description": "Property. Model:'https://schema.org/Number'. Actual torque of the fourth axis of the robot arm"
+                },
+                "torqueAxis5": {
+                    "type": "number",
+                    "description": "Property. Model:'https://schema.org/Number'. Actual torque of the fifth axis of the robot arm"
+                },
+                "torqueAxis6": {
+                    "type": "number",
+                    "description": "Property. Model:'https://schema.org/Number'. Actual torque of the sixth axis of the robot arm"
+                },
+                "maxTorqueAxis1": {
+                    "type": "number",
+                    "description": "Property. Model:'https://schema.org/Number'. Maximal torque of the first axis of the robot arm"
+                },
+                "maxTorqueAxis2": {
+                    "type": "number",
+                    "description": "Property. Model:'https://schema.org/Number'. Maximal torque of the second axis of the robot arm"
+                },
+                "maxTorqueAxis3": {
+                    "type": "number",
+                    "description": "Property. Model:'https://schema.org/Number'. Maximal torque of the third axis of the robot arm"
+                },
+                "maxTorqueAxis4": {
+                    "type": "number",
+                    "description": "Property. Model:'https://schema.org/Number'. Maximal torque of the fourth axis of the robot arm"
+                },
+                "maxTorqueAxis5": {
+                    "type": "number",
+                    "description": "Property. Model:'https://schema.org/Number'. Maximal torque of the fifth axis of the robot arm"
+                },
+                "maxTorqueAxis6": {
+                    "type": "number",
+                    "description": "Property. Model:'https://schema.org/Number'. Maximal torque of the sixth axis of the robot arm"
+                },
+                "velocityAxis1": {
+                    "type": "number",
+                    "description": "Property. Model:'https://schema.org/Number'. Actual Velocity of the first axis of the robot arm"
+                },
+                "velocityAxis2": {
+                    "type": "number",
+                    "description": "Property. Model:'https://schema.org/Number'. Actual Velocity of the second axis of the robot arm"
+                },
+                "velocityAxis3": {
+                    "type": "number",
+                    "description": "Property. Model:'https://schema.org/Number'. Actual Velocity of the third axis of the robot arm"
+                },
+                "velocityAxis4": {
+                    "type": "number",
+                    "description": "Property. Model:'https://schema.org/Number'. Actual Velocity of the fourth axis of the robot arm"
+                },
+                "velocityAxis5": {
+                    "type": "number",
+                    "description": "Property. Model:'https://schema.org/Number'. Actual Velocity of the fifth axis of the robot arm"
+                },
+                "velocityAxis6": {
+                    "type": "number",
+                    "description": "Property. Model:'https://schema.org/Number'. Actual Velocity of the sixth axis of the robot arm"
+                },
+                "maxVelocityAxis1": {
+                    "type": "number",
+                    "description": "Property. Model:'https://schema.org/Number'. Maximal Velocity of the first axis of the robot arm"
+                },
+                "maxVelocityAxis2": {
+                    "type": "number",
+                    "description": "Property. Model:'https://schema.org/Number'. Maximal Velocity of the second axis of the robot arm"
+                },
+                "maxVelocityAxis3": {
+                    "type": "number",
+                    "description": "Property. Model:'https://schema.org/Number'. Maximal Velocity of the third axis of the robot arm"
+                },
+                "maxVelocityAxis4": {
+                    "type": "number",
+                    "description": "Property. Model:'https://schema.org/Number'. Maximal Velocity of the fourth axis of the robot arm"
+                },
+                "maxVelocityAxis5": {
+                    "type": "number",
+                    "description": "Property. Model:'https://schema.org/Number'. Maximal Velocity of the fith axis of the robot arm"
+                },
+                "maxVelocityAxis6": {
+                    "type": "number",
+                    "description": "Property. Model:'https://schema.org/Number'. Maximal Velocity of the sixth axis of the robot arm"
+                }
+            }
         }
-      }
-    }
-  ],
-  "required": [
-    "id",
-    "type",
-    "serialNumber"
-  ]
+    ],
+    "required": [
+        "id",
+        "type",
+        "serialNumber"
+    ]
 }

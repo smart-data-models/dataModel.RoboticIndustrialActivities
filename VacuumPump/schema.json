@@ -1,46 +1,46 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0.1",
-  "modelTags": "",
-  "$id": "https://smart-data-models.github.io/dataModel.RoboticIndustrialActivities/VacuumPump/schema.json",
-  "title": " Smart Data Models- Vacuum Pump schema",
-  "description": "A vacuum pump.",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    {
-      "properties": {
-        "type": {
-          "type": "string",
-          "enum": [
-            "VacuumPump"
-          ],
-          "description": "Property. It has to be VacuumPump. NGSI Entity type."
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "modelTags": "",
+    "$id": "https://smart-data-models.github.io/dataModel.RoboticIndustrialActivities/VacuumPump/schema.json",
+    "title": " Smart Data Models- Vacuum Pump schema",
+    "description": "A vacuum pump.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
         },
-        "vacuumLevel": {
-          "type": "number",
-          "minimum": 0,
-          "maximum": 1,
-          "description": "Property. Model:'https://schema.org/Number'. The current vacuum level, a value between 0 and 1."
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
         },
-        "on": {
-          "type": "boolean",
-          "description": "Property. Model:'https://schema.org/Boolean'. Indicates if the device is on (true) or off (false)."
-        },
-        "pumpModel": {
-          "type": "string",
-          "description": "Property. Model:'https://schema.org/Text'. The pump model identifier."
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "VacuumPump"
+                    ],
+                    "description": "Property. It has to be VacuumPump. NGSI Entity type"
+                },
+                "vacuumLevel": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 1,
+                    "description": "Property. Model:'https://schema.org/Number'. The current vacuum level, a value between 0 and 1"
+                },
+                "on": {
+                    "type": "boolean",
+                    "description": "Property. Model:'https://schema.org/Boolean'. Indicates if the device is on (true) or off (false)"
+                },
+                "pumpModel": {
+                    "type": "string",
+                    "description": "Property. Model:'https://schema.org/Text'. The pump model identifier"
+                }
+            }
         }
-      }
-    }
-  ],
-  "required": [
-    "id",
-    "type"
-  ]
+    ],
+    "required": [
+        "id",
+        "type"
+    ]
 }

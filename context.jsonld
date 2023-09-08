@@ -23,6 +23,14 @@
         "baseX": "https://smartdatamodels.org/dataModel.RoboticIndustrialActivities/baseX",
         "baseY": "https://smartdatamodels.org/dataModel.RoboticIndustrialActivities/baseY",
         "baseZ": "https://smartdatamodels.org/dataModel.RoboticIndustrialActivities/baseZ",
+        "bbox": {
+            "@container": "@list",
+            "@id": "geojson:bbox"
+        },
+        "coordinates": {
+            "@container": "@list",
+            "@id": "geojson:coordinates"
+        },
         "currentPieceNumber": "https://smartdatamodels.org/dataModel.RoboticIndustrialActivities/currentPieceNumber",
         "dataProvider": "https://smartdatamodels.org/dataProvider",
         "dateCreated": "https://smartdatamodels.org/dateCreated",

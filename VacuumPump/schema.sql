@@ -1,3 +1,3 @@
 /* (Beta) Export of data model VacuumPump of the subject dataModel.RoboticIndustrialActivities for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE VacuumPump_type AS ENUM ('VacuumPump');
-CREATE TABLE VacuumPump (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, name TEXT, on BOOLEAN, owner JSON, pumpModel TEXT, source TEXT, type VacuumPump_type, vacuumLevel NUMERIC);
+CREATE TABLE VacuumPump (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, id TEXT PRIMARY KEY, location JSON, name TEXT, on BOOLEAN, owner JSON, pumpModel TEXT, seeAlso JSON, source TEXT, type VacuumPump_type, vacuumLevel NUMERIC);

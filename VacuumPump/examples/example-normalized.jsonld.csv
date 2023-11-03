@@ -1,0 +1,2 @@
+"id_", "type_", "on__type_", "on__value_", "pumpModel__type_", "pumpModel__value_", "vacuumLevel__type_", "vacuumLevel__value_", "@context__0_"
+"urn:ngsi-ld:VacuumPump:001", "VacuumPump", "Property", "False", "Property", "VP 123a", "Property", "0.95", "https://raw.githubusercontent.com/smart-data-models/dataModel.RoboticIndustrialActivities/master/context.jsonld"

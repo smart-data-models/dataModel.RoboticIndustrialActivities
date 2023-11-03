@@ -1,0 +1,2 @@
+"id_", "type_", "axis__0_", "axis__1_", "axis__2_", "axis__3_", "axis__4_", "axis__5_", "jobCurrentState_", "robotID_", "robotModel_", "status_", "toolID_", "@context__0_"
+"urn:ngsi-ld:Robot:FlexEdgeRobot", "RobotArm", "30.0", "14.0", "-55.0", "174.0", "145.0", "-37.0", "Processing", "FlexEdgeRobot", "KR 12345b", "#P_ACTIVE", "1", "https://raw.githubusercontent.com/smart-data-models/dataModel.RoboticIndustrialActivities/master/context.jsonld"

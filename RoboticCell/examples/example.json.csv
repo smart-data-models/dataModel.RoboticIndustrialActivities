@@ -1,0 +1,2 @@
+"id_", "type_", "refRobot_", "refVacuumPump_", "refIncomingPallet_", "refOutgoingPallet_", "errorNumber_", "errorMessage_", "totalNumberOfPieces_", "currentPieceNumber_"
+"RoboticCell.FlexEdge", "RoboticCell", "Robot.FlexEdgeRobot", "VacuumPump,FlexEdgePump", "Pallet.0003", "Pallet.0004", "0", "", "12", "4"

@@ -1,0 +1,2 @@
+"id_", "type_", "palletID_", "timeOfLoading_", "refpalletLocation_", "refGoingTo_", "manufacturabilityOnFlexEdge_", "priority_", "status_"
+"Pallet.0001", "Pallet", "0001", "2000-01-01T00:00:00Z", "Location.ShopFloor", "RoboticCell.FlexEdge", "canProcess", "3", "loading"

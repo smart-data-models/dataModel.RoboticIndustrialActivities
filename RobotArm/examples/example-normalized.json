@@ -82,28 +82,28 @@
     "value": 22
   },
   "baseX": {
-    "type": "Number",
-    "value": 0
+    "type": "Boolean",
+    "value": false
   },
   "baseY": {
-    "type": "Number",
-    "value": 0
+    "type": "Boolean",
+    "value": false
   },
   "baseZ": {
-    "type": "Number",
-    "value": 0
+    "type": "Boolean",
+    "value": false
   },
   "baseA": {
-    "type": "Number",
-    "value": 0
+    "type": "Boolean",
+    "value": false
   },
   "baseB": {
-    "type": "Number",
-    "value": 0
+    "type": "Boolean",
+    "value": false
   },
   "baseC": {
-    "type": "Number",
-    "value": 0
+    "type": "Boolean",
+    "value": false
   },
   "angleAxis1": {
     "type": "Number",
@@ -142,16 +142,16 @@
     "value": 300
   },
   "torqueAxis4": {
-    "type": "Number",
-    "value": 0
+    "type": "Boolean",
+    "value": false
   },
   "torqueAxis5": {
-    "type": "Number",
-    "value": 0
+    "type": "Boolean",
+    "value": false
   },
   "torqueAxis6": {
-    "type": "Number",
-    "value": 0
+    "type": "Boolean",
+    "value": false
   },
   "maxTorqueAxis1": {
     "type": "Number",
@@ -198,8 +198,8 @@
     "value": 2
   },
   "velocityAxis6": {
-    "type": "Number",
-    "value": 1
+    "type": "Boolean",
+    "value": true
   },
   "maxVelocityAxis1": {
     "type": "Number",

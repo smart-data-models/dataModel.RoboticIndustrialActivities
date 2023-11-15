@@ -22,7 +22,7 @@
     "value": "canProcess"
   },
   "priority": {
-    "type": "Integer",
+    "type": "Number",
     "value": 3
   },
   "status": {
@@ -30,5 +30,3 @@
     "value": "loading"
   }
 }
-
-

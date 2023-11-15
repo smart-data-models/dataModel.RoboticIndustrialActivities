@@ -6,27 +6,27 @@
     "value": "0001"
   },
   "dateCreated": {
-    "type" : "DateTime",
+    "type": "DateTime",
     "value": "2018-09-27T12:00:00Z"
   },
-  "manufacturabilityOnFlexEdge":{
-      "type" : "Text",
-      "value": "CanPickUpOnly"
+  "manufacturabilityOnFlexEdge": {
+    "type": "Text",
+    "value": "canPickUpOnly"
   },
   "timeEstimatedOnFlexEdge": {
-    "type" : "Number",
+    "type": "Number",
     "value": 600
   },
   "weight": {
-    "type" : "Number",
+    "type": "Number",
     "value": 37
   },
   "refpieceLocation": {
-    "type" : "Text",
+    "type": "Text",
     "value": "urn:ngsi-ld:Robot:DuoCutRobot"
   },
   "status": {
-    "type" : "Text",
-    "value": "Created"
+    "type": "Text",
+    "value": "created"
   }
-} 
+}

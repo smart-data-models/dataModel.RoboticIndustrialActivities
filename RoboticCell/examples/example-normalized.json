@@ -18,19 +18,19 @@
     "value": "Pallet.0004"
   },
   "errorNumber": {
-    "type": "Integer",
-    "value": 0
+    "type": "Boolean",
+    "value": false
   },
   "errorMessage": {
     "type": "Text",
     "value": ""
   },
   "totalNumberOfPieces": {
-    "type": "Integer",
-	"value": 12
+    "type": "Number",
+    "value": 12
   },
   "currentPieceNumber": {
-    "type": "Integer",
-	"value": 4
+    "type": "Number",
+    "value": 4
   }
 }

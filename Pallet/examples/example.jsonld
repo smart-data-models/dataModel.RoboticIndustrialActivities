@@ -1,14 +1,14 @@
 {
-    "id": "urn:ngsi-ld:Pallet:0001",
-    "type": "Pallet",
-    "manufacturabilityOnFlexEdge": "canProcess",
-    "palletID": "0001",
-    "priority": 3,
-    "refGoingTo": "urn:ngsi-ld:RoboticCell:FlexEdge",
-    "refPalletLocation": "urn:ngsi-ld:Location:ShopFloor",
-    "status": "loading",
-    "timeOfLoading": "2000-01-01T00:00:00Z",
-    "@context": [
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.RoboticIndustrialActivities/master/context.jsonld"
-    ]
+  "id": "urn:ngsi-ld:Pallet:0001",
+  "type": "Pallet",
+  "manufacturabilityOnFlexEdge": "canProcess",
+  "palletID": "0001",
+  "priority": 3,
+  "refGoingTo": "urn:ngsi-ld:RoboticCell:FlexEdge",
+  "refPalletLocation": "urn:ngsi-ld:Location:ShopFloor",
+  "status": "loading",
+  "timeOfLoading": "2000-01-01T00:00:00Z",
+  "@context": [
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.RoboticIndustrialActivities/master/context.jsonld"
+  ]
 }

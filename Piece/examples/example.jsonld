@@ -1,15 +1,15 @@
 {
-    "id": "urn:ngsi-ld:Piece:0001",
-    "type": "Piece",
-    "dateCreated": "2018-09-27T12:00:00Z",
-    "manufacturabilityOnFlexEdge": "canPickUpOnly",
-    "pieceID": "0001",
-    "refPieceLocation": "urn:ngsi-ld:Robot:DuoCutRobot",
-    "sequenceNumber": 1,
-    "status": "created",
-    "timeEstimatedOnFlexEdge": 600,
-    "weight": 37,
-    "@context": [
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.RoboticIndustrialActivities/master/context.jsonld"
-    ]
+  "id": "urn:ngsi-ld:Piece:0001",
+  "type": "Piece",
+  "dateCreated": "2018-09-27T12:00:00Z",
+  "manufacturabilityOnFlexEdge": "canPickUpOnly",
+  "pieceID": "0001",
+  "refPieceLocation": "urn:ngsi-ld:Robot:DuoCutRobot",
+  "sequenceNumber": 1,
+  "status": "created",
+  "timeEstimatedOnFlexEdge": 600,
+  "weight": 37,
+  "@context": [
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.RoboticIndustrialActivities/master/context.jsonld"
+  ]
 }

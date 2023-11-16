@@ -1,20 +1,21 @@
 {
-    "id": "urn:ngsi-ld:Robot:FlexEdgeRobot",
-    "type": "RobotArm",
-    "axis": [
-        30.0,
-        14.0,
-        -55.0,
-        174.0,
-        145.0,
-        -37.0
-    ],
-    "jobCurrentState": "Processing",
-    "robotID": "FlexEdgeRobot",
-    "robotModel": "KR 12345b",
-    "status": "#P_ACTIVE",
-    "toolID": 1,
-    "@context": [
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.RoboticIndustrialActivities/master/context.jsonld"
-    ]
+  "id": "urn:ngsi-ld:Robot:FlexEdgeRobot",
+  "type": "RobotArm",
+  "serialNumber": 876543,
+  "axis": [
+    30.0,
+    14.0,
+    -55.0,
+    174.0,
+    145.0,
+    -37.0
+  ],
+  "jobCurrentState": "Processing",
+  "robotID": "FlexEdgeRobot",
+  "robotModel": "KR 12345b",
+  "status": "#P_ACTIVE",
+  "toolID": 1,
+  "@context": [
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.RoboticIndustrialActivities/master/context.jsonld"
+  ]
 }

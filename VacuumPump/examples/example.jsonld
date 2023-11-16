@@ -1,10 +1,10 @@
 {
-    "id": "urn:ngsi-ld:VacuumPump:001",
-    "type": "VacuumPump",
-    "on": false,
-    "pumpModel": "VP 123a",
-    "vacuumLevel": 0.95,
-    "@context": [
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.RoboticIndustrialActivities/master/context.jsonld"
-    ]
+  "id": "urn:ngsi-ld:VacuumPump:001",
+  "type": "VacuumPump",
+  "on": false,
+  "pumpModel": "VP 123a",
+  "vacuumLevel": 0.95,
+  "@context": [
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.RoboticIndustrialActivities/master/context.jsonld"
+  ]
 }

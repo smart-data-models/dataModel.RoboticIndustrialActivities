@@ -2,7 +2,7 @@
   "id": "urn:ngsi-ld:Pallet:0001",
   "type": "Pallet",
   "manufacturabilityOnFlexEdge": "canProcess",
-  "palletID": "0001",
+  "palletId": "0001",
   "priority": 3,
   "refGoingTo": "urn:ngsi-ld:RoboticCell:FlexEdge",
   "refPalletLocation": "urn:ngsi-ld:Location:ShopFloor",

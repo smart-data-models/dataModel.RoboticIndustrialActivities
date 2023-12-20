@@ -21,7 +21,7 @@
     "type": "Number",
     "value": 37
   },
-  "refpieceLocation": {
+  "refPieceLocation": {
     "type": "Text",
     "value": "urn:ngsi-ld:Robot:DuoCutRobot"
   },

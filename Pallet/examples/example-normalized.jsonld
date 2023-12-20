@@ -5,7 +5,7 @@
     "type": "Property",
     "value": "CanProcess"
   },
-  "palletID": {
+  "palletId": {
     "type": "Property",
     "value": "0001"
   },

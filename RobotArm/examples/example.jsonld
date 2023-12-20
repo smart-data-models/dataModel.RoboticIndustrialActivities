@@ -56,7 +56,7 @@
   "maxVelocityAxis3": 100,
   "maxVelocityAxis4": 100,
   "maxVelocityAxis5": 100,
-  "maxVelocityAxis6": 100
+  "maxVelocityAxis6": 100,
   "@context": [
     "https://raw.githubusercontent.com/smart-data-models/dataModel.RoboticIndustrialActivities/master/context.jsonld"
   ]

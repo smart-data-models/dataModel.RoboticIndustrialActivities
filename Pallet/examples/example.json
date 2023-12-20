@@ -1,9 +1,9 @@
 {
   "id": "Pallet.0001",
   "type": "Pallet",
-  "palletID": "0001",
+  "palletId": "0001",
   "timeOfLoading": "2000-01-01T00:00:00Z",
-  "refpalletLocation": "Location.ShopFloor",
+  "refPalletLocation": "Location.ShopFloor",
   "refGoingTo": "RoboticCell.FlexEdge",
   "manufacturabilityOnFlexEdge": "canProcess",
   "priority": 3,

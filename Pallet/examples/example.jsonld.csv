@@ -1,2 +1,2 @@
-"id_", "type_", "manufacturabilityOnFlexEdge_", "palletID_", "priority_", "refGoingTo_", "refPalletLocation_", "status_", "timeOfLoading_", "@context__0_"
+"id_", "type_", "manufacturabilityOnFlexEdge_", "palletId_", "priority_", "refGoingTo_", "refPalletLocation_", "status_", "timeOfLoading_", "@context__0_"
 "urn:ngsi-ld:Pallet:0001", "Pallet", "canProcess", "0001", "3", "urn:ngsi-ld:RoboticCell:FlexEdge", "urn:ngsi-ld:Location:ShopFloor", "loading", "2000-01-01T00:00:00Z", "https://raw.githubusercontent.com/smart-data-models/dataModel.RoboticIndustrialActivities/master/context.jsonld"

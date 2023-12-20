@@ -1,7 +1,7 @@
 {
   "id": "Pallet.0001",
   "type": "Pallet",
-  "palletID": {
+  "palletId": {
     "type": "Text",
     "value": "0001"
   },

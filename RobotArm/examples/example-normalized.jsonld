@@ -1,37 +1,230 @@
 {
     "id": "urn:ngsi-ld:Robot:FlexEdgeRobot",
     "type": "RobotArm",
-    "axis": {
+    "serialNumber": {
         "type": "Property",
-        "value": [
-            30.0,
-            14.0,
-            -55.0,
-            174.0,
-            145.0,
-            -37.0
-        ]
-    },
-    "jobCurrentState": {
+        "value": 876543
+      },
+      "proState0": {
         "type": "Property",
-        "value": "Processing"
-    },
-    "robotID": {
+        "value": "#P_FREE"
+      },
+      "proState1": {
         "type": "Property",
-        "value": "FlexEdgeRobot"
-    },
-    "robotModel": {
+        "value": "#P_FREE"
+      },
+      "drivesOn": {
         "type": "Property",
-        "value": "KR 12345b"
-    },
-    "status": {
+        "value": false
+      },
+      "drivesOff": {
         "type": "Property",
-        "value": "#P_ACTIVE"
-    },
-    "toolID": {
+        "value": true
+      },
+      "peripheryReady": {
         "type": "Property",
-        "value": 1
-    },
+        "value": true
+      },
+      "emergencyStop": {
+        "type": "Property",
+        "value": false
+      },
+      "operatingMode": {
+        "type": "Property",
+        "value": "#AUT"
+      },
+      "positionX": {
+        "type": "Property",
+        "value": 45
+      },
+      "positionY": {
+        "type": "Property",
+        "value": 100
+      },
+      "positionZ": {
+        "type": "Property",
+        "value": 200
+      },
+      "positionA": {
+        "type": "Property",
+        "value": 20
+      },
+      "positionB": {
+        "type": "Property",
+        "value": 10
+      },
+      "positionC": {
+        "type": "Property",
+        "value": 15
+      },
+      "toolX": {
+        "type": "Property",
+        "value": 20
+      },
+      "toolY": {
+        "type": "Property",
+        "value": 200
+      },
+      "toolZ": {
+        "type": "Property",
+        "value": 100
+      },
+      "toolA": {
+        "type": "Property",
+        "value": 11
+      },
+      "toolB": {
+        "type": "Property",
+        "value": 33
+      },
+      "toolC": {
+        "type": "Property",
+        "value": 22
+      },
+      "baseX": {
+        "type": "Property",
+        "value": false
+      },
+      "baseY": {
+        "type": "Property",
+        "value": false
+      },
+      "baseZ": {
+        "type": "Property",
+        "value": false
+      },
+      "baseA": {
+        "type": "Property",
+        "value": false
+      },
+      "baseB": {
+        "type": "Property",
+        "value": false
+      },
+      "baseC": {
+        "type": "Property",
+        "value": false
+      },
+      "angleAxis1": {
+        "type": "Property",
+        "value": 10
+      },
+      "angleAxis2": {
+        "type": "Property",
+        "value": 20
+      },
+      "angleAxis3": {
+        "type": "Property",
+        "value": 30
+      },
+      "angleAxis4": {
+        "type": "Property",
+        "value": 40
+      },
+      "angleAxis5": {
+        "type": "Property",
+        "value": 50
+      },
+      "angleAxis6": {
+        "type": "Property",
+        "value": 60
+      },
+      "torqueAxis1": {
+        "type": "Property",
+        "value": 1500
+      },
+      "torqueAxis2": {
+        "type": "Property",
+        "value": 1000
+      },
+      "torqueAxis3": {
+        "type": "Property",
+        "value": 300
+      },
+      "torqueAxis4": {
+        "type": "Property",
+        "value": false
+      },
+      "torqueAxis5": {
+        "type": "Property",
+        "value": false
+      },
+      "torqueAxis6": {
+        "type": "Property",
+        "value": false
+      },
+      "maxTorqueAxis1": {
+        "type": "Property",
+        "value": 4500
+      },
+      "maxTorqueAxis2": {
+        "type": "Property",
+        "value": 4500
+      },
+      "maxTorqueAxis3": {
+        "type": "Property",
+        "value": 4500
+      },
+      "maxTorqueAxis4": {
+        "type": "Property",
+        "value": 4500
+      },
+      "maxTorqueAxis5": {
+        "type": "Property",
+        "value": 4500
+      },
+      "maxTorqueAxis6": {
+        "type": "Property",
+        "value": 4500
+      },
+      "velocityAxis1": {
+        "type": "Property",
+        "value": 6
+      },
+      "velocityAxis2": {
+        "type": "Property",
+        "value": 5
+      },
+      "velocityAxis3": {
+        "type": "Property",
+        "value": 4
+      },
+      "velocityAxis4": {
+        "type": "Property",
+        "value": 3
+      },
+      "velocityAxis5": {
+        "type": "Property",
+        "value": 2
+      },
+      "velocityAxis6": {
+        "type": "Property",
+        "value": true
+      },
+      "maxVelocityAxis1": {
+        "type": "Property",
+        "value": 100
+      },
+      "maxVelocityAxis2": {
+        "type": "Property",
+        "value": 100
+      },
+      "maxVelocityAxis3": {
+        "type": "Property",
+        "value": 100
+      },
+      "maxVelocityAxis4": {
+        "type": "Property",
+        "value": 100
+      },
+      "maxVelocityAxis5": {
+        "type": "Property",
+        "value": 100
+      },
+      "maxVelocityAxis6": {
+        "type": "Property",
+        "value": 100
+      },
     "@context": [
         "https://raw.githubusercontent.com/smart-data-models/dataModel.RoboticIndustrialActivities/master/context.jsonld"
     ]

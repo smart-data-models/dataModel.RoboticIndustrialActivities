@@ -24,31 +24,36 @@
 #         curl -X GET http://localhost:1026/ngsi-ld/v1/entities?local=true&limit=1000
 #         
 #         # now the python code you can use to insert some value in the context broker according to the data model
+#         # Version Warning! 
+#         # This code is designed to work with the version 0.8 of pysmartdatamodels or later
+#         # to work with earlier version you need to replace the import instruction for
+#         # from pysmartdatamodels import pysmartdatamodels as sdm
 #         
-from pysmartdatamodels import pysmartdatamodels as sdm
+#         
+import pysmartdatamodels as sdm
 import subprocess
 serverUrl = "http://localhost:1026" # supposed that your broker is installed in localhost. Edit to match your configuration
 dataModel = "Piece"
 subject = "dataModel.RoboticIndustrialActivities"
-manufacturabilityOnFlexEdge = "{'type': 'Property', 'value': 'CanPickUpOnly'}"
+manufacturabilityOnFlexEdge = "canPickUpOnly"
 attribute = "manufacturabilityOnFlexEdge"
 value = manufacturabilityOnFlexEdge
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-pieceID = "{'type': 'Property', 'value': '0001'}"
+pieceID = "0001"
 attribute = "pieceID"
 value = pieceID
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-refPieceLocation = "{'type': 'Relationship', 'object': 'urn:ngsi-ld:Robot:DuoCutRobot'}"
+refPieceLocation = "urn:ngsi-ld:Robot:DuoCutRobot"
 attribute = "refPieceLocation"
 value = refPieceLocation
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-sequenceNumber = {'type': 'Property', 'value': 1}
+sequenceNumber = 1
 attribute = "sequenceNumber"
 value = sequenceNumber
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it

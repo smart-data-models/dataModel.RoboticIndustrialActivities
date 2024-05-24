@@ -24,31 +24,36 @@
 #         curl -X GET http://localhost:1026/ngsi-ld/v1/entities?local=true&limit=1000
 #         
 #         # now the python code you can use to insert some value in the context broker according to the data model
+#         # Version Warning! 
+#         # This code is designed to work with the version 0.8 of pysmartdatamodels or later
+#         # to work with earlier version you need to replace the import instruction for
+#         # from pysmartdatamodels import pysmartdatamodels as sdm
 #         
-from pysmartdatamodels import pysmartdatamodels as sdm
+#         
+import pysmartdatamodels as sdm
 import subprocess
 serverUrl = "http://localhost:1026" # supposed that your broker is installed in localhost. Edit to match your configuration
 dataModel = "RoboticCell"
 subject = "dataModel.RoboticIndustrialActivities"
-currentPieceNumber = {'type': 'Property', 'value': 4}
+currentPieceNumber = 4
 attribute = "currentPieceNumber"
 value = currentPieceNumber
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-errorMessage = "{'type': 'Property', 'value': ''}"
+errorMessage = ""
 attribute = "errorMessage"
 value = errorMessage
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-errorNumber = {'type': 'Property', 'value': 0}
+errorNumber = 0
 attribute = "errorNumber"
 value = errorNumber
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-refIncomingPallet = "{'type': 'Relationship', 'object': 'urn:ngsi-ld:Pallet:0003'}"
+refIncomingPallet = "urn:ngsi-ld:Pallet:0003"
 attribute = "refIncomingPallet"
 value = refIncomingPallet
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it

@@ -1,83 +1,83 @@
 {
-    "$schema": "http://json-schema.org/schema#",
-    "$schemaVersion": "0.0.2",
-    "modelTags": "",
-    "$id": "https://smart-data-models.github.io/dataModel.RoboticIndustrialActivities/Pallet/schema.json",
-    "title": " Smart Data Models- Piece schema",
-    "description": "A Piece to be manufactured.",
-    "type": "object",
-    "allOf": [
-        {
-            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$schemaVersion": "0.0.2",
+  "modelTags": "",
+  "$id": "https://smart-data-models.github.io/dataModel.RoboticIndustrialActivities/Pallet/schema.json",
+  "title": " Smart Data Models- Piece schema",
+  "description": "A Piece to be manufactured.",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+    },
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "Piece"
+          ],
+          "description": "Property. It has to be Piece. NGSI Entity type"
         },
-        {
-            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        "pieceID": {
+          "type": "string",
+          "description": "Property. The Id of the piece. Model:'https://schema.org/Text'"
         },
-        {
-            "properties": {
-                "type": {
-                    "type": "string",
-                    "enum": [
-                        "Piece"
-                    ],
-                    "description": "Property. It has to be Piece. NGSI Entity type"
-                },
-                "pieceID": {
-                    "type": "string",
-                    "description": "Property. The Id of the piece. Model:'https://schema.org/Text'"
-                },
-                "manufacturabilityOnFlexEdge": {
-                    "type": "string",
-                    "enum": [
-                        "canPickUpOnly",
-                        "cannotPickUp",
-                        "canProcess"
-                    ],
-                    "description": "Property. Indicates if the Piece can be picked up by robot and be processed. Enum:'canPickUpOnly, cannotPickUp, canProcess'"
-                },
-                "timeEstimatedOnFlexEdge": {
-                    "type": "number",
-                    "description": "Property. Number of seconds it is estimated to process the piece. Model:'https://schema.org/Text'"
-                },
-                "weight": {
-                    "type": "number",
-                    "description": "Property. Indicates the weight off the item. Model:'https://schema.org/Number'"
-                },
-                "sequenceNumber": {
-                    "type": "number",
-                    "description": "Property. Indicates the position of the piece on a pallet. Model:'https://schema.org/Number'"
-                },
-                "refPieceLocation": {
-                    "anyOf": [
-                        {
-                            "type": "string",
-                            "minLength": 1,
-                            "maxLength": 256,
-                            "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
-                            "description": "Property. Identifier format of any NGSI entity"
-                        },
-                        {
-                            "type": "string",
-                            "format": "uri",
-                            "description": "Property. Identifier format of any NGSI entity"
-                        }
-                    ],
-                    "description": "Relationship. Current location of a piece, on robot, on pallet, etc"
-                },
-                "status": {
-                    "type": "string",
-                    "enum": [
-                        "created",
-                        "inProcess",
-                        "finished"
-                    ],
-                    "description": "Property. Indicates the current status of the item. Model:'https://schema.org/Text'"
-                }
+        "manufacturabilityOnFlexEdge": {
+          "type": "string",
+          "enum": [
+            "canPickUpOnly",
+            "cannotPickUp",
+            "canProcess"
+          ],
+          "description": "Property. Indicates if the Piece can be picked up by robot and be processed. Enum:'canPickUpOnly, cannotPickUp, canProcess'"
+        },
+        "timeEstimatedOnFlexEdge": {
+          "type": "number",
+          "description": "Property. Number of seconds it is estimated to process the piece. Model:'https://schema.org/Text'"
+        },
+        "weight": {
+          "type": "number",
+          "description": "Property. Indicates the weight off the item. Model:'https://schema.org/Number'"
+        },
+        "sequenceNumber": {
+          "type": "number",
+          "description": "Property. Indicates the position of the piece on a pallet. Model:'https://schema.org/Number'"
+        },
+        "refPieceLocation": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 256,
+              "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
+              "description": "Property. Identifier format of any NGSI entity"
+            },
+            {
+              "type": "string",
+              "format": "uri",
+              "description": "Property. Identifier format of any NGSI entity"
             }
+          ],
+          "description": "Relationship. Current location of a piece, on robot, on pallet, etc"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "created",
+            "inProcess",
+            "finished"
+          ],
+          "description": "Property. Indicates the current status of the item. Model:'https://schema.org/Text'"
         }
-    ],
-    "required": [
-        "id",
-        "type"
-    ]
+      }
+    }
+  ],
+  "required": [
+    "id",
+    "type"
+  ]
 }

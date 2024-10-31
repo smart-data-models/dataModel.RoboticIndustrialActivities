@@ -25,11 +25,11 @@
         "baseZ": "https://smartdatamodels.org/dataModel.RoboticIndustrialActivities/baseZ",
         "bbox": {
             "@container": "@list",
-            "@id": "geojson:bbox"
+            "@id": "https://purl.org/geojson/vocab#bbox"
         },
         "coordinates": {
             "@container": "@list",
-            "@id": "geojson:coordinates"
+            "@id": "https://purl.org/geojson/vocab#coordinates"
         },
         "currentPieceNumber": "https://smartdatamodels.org/dataModel.RoboticIndustrialActivities/currentPieceNumber",
         "dataProvider": "https://smartdatamodels.org/dataProvider",
@@ -43,7 +43,7 @@
         "errorMessage": "https://smartdatamodels.org/dataModel.RoboticIndustrialActivities/errorMessage",
         "errorNumber": "https://smartdatamodels.org/dataModel.RoboticIndustrialActivities/errorNumber",
         "id": "@id",
-        "location": "ngsi-ld:location",
+        "location": "https://uri.etsi.org/ngsi-ld/location",
         "manufacturabilityOnFlexEdge": "https://smartdatamodels.org/dataModel.RoboticIndustrialActivities/manufacturabilityOnFlexEdge",
         "maxTorqueAxis1": "https://smartdatamodels.org/dataModel.RoboticIndustrialActivities/maxTorqueAxis1",
         "maxTorqueAxis2": "https://smartdatamodels.org/dataModel.RoboticIndustrialActivities/maxTorqueAxis2",
@@ -88,7 +88,7 @@
         "sequenceNumber": "https://smartdatamodels.org/dataModel.RoboticIndustrialActivities/sequenceNumber",
         "serialNumber": "https://smartdatamodels.org/dataModel.RoboticIndustrialActivities/serialNumber",
         "source": "https://smartdatamodels.org/source",
-        "status": "ngsi-ld:status",
+        "status": "https://uri.etsi.org/ngsi-ld/status",
         "streetAddress": "https://smartdatamodels.org/streetAddress",
         "streetNr": "https://smartdatamodels.org/streetNr",
         "timeEstimatedOnFlexEdge": "https://smartdatamodels.org/dataModel.RoboticIndustrialActivities/timeEstimatedOnFlexEdge",

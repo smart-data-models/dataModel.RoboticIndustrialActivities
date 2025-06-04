@@ -98,6 +98,30 @@
           "type": "number",
           "description": "Property. Model:'https://schema.org/Text'. Actual c (rotation around x axis) coordinate of the robot position (with the actual tool and base coordinates)"
         },
+        "targetPositionX": {
+          "type": "number",
+          "description": "Property. Model:'https://schema.org/Text'. Target/intended x coordinate of the robot final position"
+        },
+        "targetPositionY": {
+          "type": "number",
+          "description": "Property. Model:'https://schema.org/Text'. Target/intended y coordinate of the robot final position"
+        },
+        "targetPositionZ": {
+          "type": "number",
+          "description": "Property. Model:'https://schema.org/Text'. Target/intended Z coordinate of the robot final position"
+        },
+        "targetPositionA": {
+          "type": "number",
+          "description": "Property. Model:'https://schema.org/Text'. Target/intended a (rotation around z axis) coordinate of the robot final position"
+        },
+        "targetPositionB": {
+          "type": "number",
+          "description": "Property. Model:'https://schema.org/Text'. Target/intended b (rotation around y axis) coordinate of the robot final position"
+        },
+        "targetPositionC": {
+          "type": "number",
+          "description": "Property. Model:'https://schema.org/Text'. Target/intended c (rotation around x axis) coordinate of the robot final position"
+        },
         "toolX": {
           "type": "number",
           "description": "Property. Model:'https://schema.org/Text'. Actual x value for the definition of the tool frame"
@@ -265,6 +289,54 @@
         "maxVelocityAxis6": {
           "type": "number",
           "description": "Property. Model:'https://schema.org/Number'. Maximal Velocity of the sixth axis of the robot arm"
+        },
+        "measuredCurrentAxis1": {
+          "type": "number",
+          "description": "Property. Model:'https://schema.org/Text'. Actual current consumption of the first axis of the robot arm"
+        },
+        "measuredCurrentAxis2": {
+          "type": "number",
+          "description": "Property. Model:'https://schema.org/Text'. Actual current consumption of the second axis of the robot arm"
+        },
+        "measuredCurrentAxis3": {
+          "type": "number",
+          "description": "Property. Model:'https://schema.org/Text'. Actual current consumption of the third axis of the robot arm"
+        },
+        "measuredCurrentAxis4": {
+          "type": "number",
+          "description": "Property. Model:'https://schema.org/Text'. Actual current consumption of the fourth axis of the robot arm"
+        },
+        "measuredCurrentAxis5": {
+          "type": "number",
+          "description": "Property. Model:'https://schema.org/Text'. Actual current consumption of the fifth axis of the robot arm"
+        },
+        "measuredCurrentAxis6": {
+          "type": "number",
+          "description": "Property. Model:'https://schema.org/Text'. Actual current consumption of the sixth axis of the robot arm"
+        },
+        "estimatedCurrentAxis1": {
+          "type": "number",
+          "description": "Property. Model:'https://schema.org/Text'. Estimated current consumption of the first axis of the robot arm"
+        },
+        "estimatedCurrentAxis2": {
+          "type": "number",
+          "description": "Property. Model:'https://schema.org/Text'. Estimated current consumption of the second axis of the robot arm"
+        },
+        "estimatedCurrentAxis3": {
+          "type": "number",
+          "description": "Property. Model:'https://schema.org/Text'. Estimated current consumption of the third axis of the robot arm"
+        },
+        "estimatedCurrentAxis4": {
+          "type": "number",
+          "description": "Property. Model:'https://schema.org/Text'. Estimated current consumption of the fourth axis of the robot arm"
+        },
+        "estimatedCurrentAxis5": {
+          "type": "number",
+          "description": "Property. Model:'https://schema.org/Text'. Estimated current consumption of the fifth axis of the robot arm"
+        },
+        "estimatedCurrentAxis6": {
+          "type": "number",
+          "description": "Property. Model:'https://schema.org/Text'. Estimated current consumption of the sixth axis of the robot arm"
         }
       }
     }

@@ -57,6 +57,30 @@
     "type": "Number",
     "value": 15
   },
+  "targetPositionX": {
+    "type": "Number",
+    "value": 45
+  },
+  "targetPositionY": {
+    "type": "Number",
+    "value": 100
+  },
+  "targetPositionZ": {
+    "type": "Number",
+    "value": 200
+  },
+  "targetPositionA": {
+    "type": "Number",
+    "value": 20
+  },
+  "targetPositionB": {
+    "type": "Number",
+    "value": 10
+  },
+  "targetPositionC": {
+    "type": "Number",
+    "value": 15
+  },
   "toolX": {
     "type": "Number",
     "value": 20
@@ -224,5 +248,53 @@
   "maxVelocityAxis6": {
     "type": "Number",
     "value": 100
+  },
+  "measuredCurrentAxis1": {
+    "type": "Number",
+    "value": 0.10
+  },
+  "measuredCurrentAxis2": {
+    "type": "Number",
+    "value": 0.20
+  },
+  "measuredCurrentAxis3": {
+    "type": "Number",
+    "value": 0.30
+  },
+  "measuredCurrentAxis4": {
+    "type": "Number",
+    "value": 0.40
+  },
+  "measuredCurrentAxis5": {
+    "type": "Number",
+    "value": 0.50
+  },
+  "measuredCurrentAxis6": {
+    "type": "Number",
+    "value": 0.60
+  },
+  "estimatedCurrentAxis1": {
+    "type": "Number",
+    "value": 0.10
+  },
+  "estimatedCurrentAxis2": {
+    "type": "Number",
+    "value": 0.20
+  },
+  "estimatedCurrentAxis3": {
+    "type": "Number",
+    "value": 0.30
+  },
+  "estimatedCurrentAxis4": {
+    "type": "Number",
+    "value": 0.40
+  },
+  "estimatedCurrentAxis5": {
+    "type": "Number",
+    "value": 0.50
+  },
+  "estimatedCurrentAxis6": {
+    "type": "Number",
+    "value": 0.60
   }
 }

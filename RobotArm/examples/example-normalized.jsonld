@@ -57,6 +57,30 @@
         "type": "Property",
         "value": 15
       },
+      "targetPositionX": {
+        "type": "Property",
+        "value": 45
+      },
+      "targetPositionY": {
+        "type": "Property",
+        "value": 100
+      },
+      "targetPositionZ": {
+        "type": "Property",
+        "value": 200
+      },
+      "targetPositionA": {
+        "type": "Property",
+        "value": 20
+      },
+      "targetPositionB": {
+        "type": "Property",
+        "value": 10
+      },
+      "targetPositionC": {
+        "type": "Property",
+        "value": 15
+      },
       "toolX": {
         "type": "Property",
         "value": 20
@@ -224,6 +248,54 @@
       "maxVelocityAxis6": {
         "type": "Property",
         "value": 100
+      },
+      "measuredCurrentAxis1": {
+        "type": "Property",
+        "value": 0.10
+      },
+      "measuredCurrentAxis2": {
+        "type": "Property",
+        "value": 0.20
+      },
+      "measuredCurrentAxis3": {
+        "type": "Property",
+        "value": 0.30
+      },
+      "measuredCurrentAxis4": {
+        "type": "Property",
+        "value": 0.40
+      },
+      "measuredCurrentAxis5": {
+        "type": "Property",
+        "value": 0.50
+      },
+      "measuredCurrentAxis6": {
+        "type": "Property",
+        "value": 0.60
+      },
+      "estimatedCurrentAxis1": {
+        "type": "Property",
+        "value": 0.10
+      },
+      "estimatedCurrentAxis2": {
+        "type": "Property",
+        "value": 0.20
+      },
+      "estimatedCurrentAxis3": {
+        "type": "Property",
+        "value": 0.30
+      },
+      "estimatedCurrentAxis4": {
+        "type": "Property",
+        "value": 0.40
+      },
+      "estimatedCurrentAxis5": {
+        "type": "Property",
+        "value": 0.50
+      },
+      "estimatedCurrentAxis6": {
+        "type": "Property",
+        "value": 0.60
       },
     "@context": [
         "https://raw.githubusercontent.com/smart-data-models/dataModel.RoboticIndustrialActivities/master/context.jsonld"

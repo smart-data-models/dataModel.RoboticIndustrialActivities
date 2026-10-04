@@ -1,3 +1,26 @@
 /* (Beta) Export of data model RoboticCell of the subject dataModel.RoboticIndustrialActivities for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE RoboticCell_type AS ENUM ('RoboticCell');
-CREATE TABLE RoboticCell (address JSON, alternateName TEXT, areaServed TEXT, currentPieceNumber NUMERIC, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, errorMessage TEXT, errorNumber NUMERIC, id TEXT PRIMARY KEY, location JSON, name TEXT, owner JSON, seeAlso JSON, source TEXT, totalNumberOfPieces NUMERIC, type RoboticCell_type);
+CREATE TABLE RoboticCell (
+  "address" JSON,
+  "alternateName" TEXT,
+  "areaServed" TEXT,
+  "currentPieceNumber" NUMERIC,
+  "dataProvider" TEXT,
+  "dateCreated" TIMESTAMP,
+  "dateModified" TIMESTAMP,
+  "description" TEXT,
+  "errorMessage" TEXT,
+  "errorNumber" NUMERIC,
+  "id" TEXT PRIMARY KEY,
+  "location" JSON,
+  "name" TEXT,
+  "owner" JSON,
+  "refIncomingPallet" JSON,
+  "refOutgoingPallet" JSON,
+  "refRobot" JSON,
+  "refVacuumPump" JSON,
+  "seeAlso" JSON,
+  "source" TEXT,
+  "totalNumberOfPieces" NUMERIC,
+  "type" RoboticCell_type
+);

@@ -1,7 +1,7 @@
 /* (Beta) Export of data model RobotArm of the subject dataModel.RoboticIndustrialActivities for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE operatingMode_type AS ENUM ('#T1', '#T2', '#AUT', '#EXT');
-CREATE TYPE proState0_type AS ENUM ('#P_FREE', '#P_ACTIVE', '#P_END', '#P_RESET', '#P_STOP');
-CREATE TYPE proState1_type AS ENUM ('#P_FREE', '#P_ACTIVE', '#P_END', '#P_RESET', '#P_STOP');
+CREATE TYPE RobotArm_operatingMode_type AS ENUM ('#T1', '#T2', '#AUT', '#EXT');
+CREATE TYPE RobotArm_proState0_type AS ENUM ('#P_FREE', '#P_ACTIVE', '#P_END', '#P_RESET', '#P_STOP');
+CREATE TYPE RobotArm_proState1_type AS ENUM ('#P_FREE', '#P_ACTIVE', '#P_END', '#P_RESET', '#P_STOP');
 CREATE TYPE RobotArm_type AS ENUM ('RobotArm');
 CREATE TABLE RobotArm (
   "address" JSON,
@@ -53,7 +53,7 @@ CREATE TABLE RobotArm (
   "measuredCurrentAxis5" NUMERIC,
   "measuredCurrentAxis6" NUMERIC,
   "name" TEXT,
-  "operatingMode" operatingMode_type,
+  "operatingMode" RobotArm_operatingMode_type,
   "owner" JSON,
   "peripheryReady" BOOLEAN,
   "positionA" NUMERIC,
@@ -62,8 +62,8 @@ CREATE TABLE RobotArm (
   "positionX" NUMERIC,
   "positionY" NUMERIC,
   "positionZ" NUMERIC,
-  "proState0" proState0_type,
-  "proState1" proState1_type,
+  "proState0" RobotArm_proState0_type,
+  "proState1" RobotArm_proState1_type,
   "seeAlso" JSON,
   "serialNumber" NUMERIC,
   "source" TEXT,

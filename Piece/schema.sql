@@ -1,6 +1,6 @@
 /* (Beta) Export of data model Piece of the subject dataModel.RoboticIndustrialActivities for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE manufacturabilityOnFlexEdge_type AS ENUM ('canPickUpOnly', 'cannotPickUp', 'canProcess');
-CREATE TYPE status_type AS ENUM ('created', 'inProcess', 'finished');
+CREATE TYPE Piece_manufacturabilityOnFlexEdge_type AS ENUM ('canPickUpOnly', 'cannotPickUp', 'canProcess');
+CREATE TYPE Piece_status_type AS ENUM ('created', 'inProcess', 'finished');
 CREATE TYPE Piece_type AS ENUM ('Piece');
 CREATE TABLE Piece (
   "address" JSON,
@@ -12,7 +12,7 @@ CREATE TABLE Piece (
   "description" TEXT,
   "id" TEXT PRIMARY KEY,
   "location" JSON,
-  "manufacturabilityOnFlexEdge" manufacturabilityOnFlexEdge_type,
+  "manufacturabilityOnFlexEdge" Piece_manufacturabilityOnFlexEdge_type,
   "name" TEXT,
   "owner" JSON,
   "pieceID" TEXT,
@@ -20,7 +20,7 @@ CREATE TABLE Piece (
   "seeAlso" JSON,
   "sequenceNumber" NUMERIC,
   "source" TEXT,
-  "status" status_type,
+  "status" Piece_status_type,
   "timeEstimatedOnFlexEdge" NUMERIC,
   "type" Piece_type,
   "weight" NUMERIC
